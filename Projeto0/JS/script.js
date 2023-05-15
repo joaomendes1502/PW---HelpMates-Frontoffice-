@@ -4,6 +4,7 @@ const navMenu = document.querySelector(".nav-menu");
 hamburguer.addEventListener("click", () => {
     hamburguer.classList.toggle('active');
     navMenu.classList.toggle('active');
+    
 })
 
 const multipleItemCarousel = document.querySelector('#carouselExampleControls');
@@ -43,5 +44,8 @@ if (window.matchMedia("(min-width:576px)").matches) {
 } else {
     $(multipleItemCarousel).addClass('slide');
 };
+
+
+
 
 

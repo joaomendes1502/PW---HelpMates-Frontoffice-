@@ -652,27 +652,6 @@ object-fit: cover;
   transition: .5s all ease;
 }
 
-.actions .btn-google{
-  background-color: #ffffff;
-  cursor: pointer;
-  color: #000000;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-.actions .btn-google:hover{
-  background-color: #1E88E5;
-  color: #ffffff;
-  transition: .5s all ease;
-}
-.actions .btn-google .icon {
-
-  display: inline-block;
-  vertical-align: middle;
-}
-.actions .btn-google .icon img{
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-}
 
 .form-bottom{
   display: flex;
