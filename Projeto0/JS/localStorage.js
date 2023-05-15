@@ -1,70 +1,46 @@
-let utilizador = [{
-    "role": "admin",
-    "nome": "admin",
-    "password": "admin"
-},
-{
-    "role": "cliente",
-    "nome": "cliente123",
-    "password": "1234"
-}
-]
-localStorage.setItem("utilizador", JSON.stringify(utilizador));
+var postar = [{
+    "imagem": "./images/animais.jpg"
+}, {
+    "imagem": "./images/educacao.jpeg"
+}, {
+    "imagem": "./images/meio ambiente.jpeg"
+}, {
+    "imagem": "./images/turismo social.jpg"
+}, {
+    "imagem": "./images/auxilio doentes(2).jpg"
+}, {
+    "imagem": "./images/desporto.jpg"
+}];
 
-function registar(){
+var postarcoluna = [{
+    "Tipo": "Animais",
+    "Descricao": "Os animais precisam dos nossos cuidados e proteção, ajuda- nos a criar um futuro mais seguro e feliz para eles.",
+    "ref": "referencia"
+}, {
+    "Tipo": "Educação",
+    "Descricao": "O voluntariado na educação é uma oportunidade única para contribuir para a formação de uma sociedade mais justa.",
+    "ref": "referencia"
+}, {
+    "Tipo": "Meio ambiente",
+    "Descricao": "És preocupado com o ambiente? Faz a tua parte e ajuda-nos a preservar o meio ambiente e a garantir um futuro sustentável, o planeta está nas nossas mãos!",
+    "ref": "referencia"
+}, {
+    "Tipo": "Turismo social",
+    "Descricao": "Gostas de viajar? Esta é uma maneira única de explorar novos lugares e, ao mesmo tempo, fazer diferença na vida das pessoas.",
+    "ref": "referencia"
+}, {
+    "Tipo": "Auxílio de doentes",
+    "Descricao": "Faça a diferença na vida de alguém, ajude a trazer conforto e apoio para aqueles que mais precisam.",
+    "ref": "referencia"
+}, {
+    "Tipo": "Desporto",
+    "Descricao": "És apaixonado pelo desporto? Esta é a tua oportunidade de ajudar a construir uma comunidade mais ativa e saudável.",
+    "ref": "referencia"
+}];
 
-    let name = document.getElementById('name').value;
-    let pw = document.getElementById('pw').value;
-    let lowerCaseLetters = /[a-z]/g;
-    let upperCaseLetters = /[A-Z]/g;
-    let numbers = /[0-9]/g;
 
-    /*if(name.value.length == 0){
-        alert('Please fill in email');
-    }else if(pw.value.length == 0){
-        alert('Please fill in password');
-    }else if(name.value.length == 0 && pw.value.length == 0){
-        alert('Please fill in email and password');
-    }else if(pw.value.length > 8){
-        alert('Max of 8');
-    }else if(!pw.value.match(numbers)){
-        alert('please add 1 number');
-    }else if(!pw.value.match(upperCaseLetters)){
-        alert('please add 1 uppercase letter');
-    }else if(!pw.value.match(lowerCaseLetters)){
-        alert('please add 1 lovercase letter');
-    }else{*/
-        let utilizador = JSON.parse(localStorage.getItem("utilizador")); 
-        let novo = {"role": "cliente", "nome": name, "password": pw}
-        utilizador.push(novo); 
-        localStorage.setItem("utilizador", JSON.stringify(utilizador));
-        alert('A sua conta foi criada');
-    /*}*/
-}
 
-function verificarUtilizador(nome, password){
-    let utilizador = JSON.parse(localStorage.getItem("utilizador"))
-    let resultado = null; 
-    utilizador.forEach(u => { 
-        if(u.nome === nome && u.password === password){
-            resultado = u; 
-        }
-    });
-    return resultado; 
-}
 
-function login(){
-    let userName = document.getElementById('userName').value;
-    let userPw = document.getElementById('userPw').value;
-    let u = verificarUtilizador(userName, userPw);
-    console.log(u)
-    if(u){
-        if(u.role === "admin"){
-            alert("Logado como admin"); 
-        }else{
-            alert("Logado como cliente"); 
-        }
-    }else{
-        alert("Este utilizador nao existe"); 
-    }
-}
+localStorage.setItem("ImagensOportunidades", JSON.stringify(postar))
+
+localStorage.setItem("Oportunidades", JSON.stringify(postarcoluna))
