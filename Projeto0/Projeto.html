@@ -18,44 +18,51 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="HelpMates.html">
-            <img src="images\Logo.png"
-                width="232" height="81" alt="">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-
-
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="HelpMates.html">Home </a>
-                <a class="nav-item nav-link" href="Sobrenos.html">Sobre nós</a>
-                <a class="nav-item nav-link" href="Oportunidades.html">Oportunidades</a>
-                <a class="nav-item nav-link active" href="Projeto.html">Projeto</a>
-                <a class="nav-item nav-link" href="Doaçoes.html">Doações</a>
-                <a class="nav-item nav-link" href="Contactos.html">Contactos</a>
-                <a class="nav-item nav-link" href="Login.html">Login</a>
-            </div>
-        </div>
-
-    </nav>
+  <nav class="navbar fixed-top">
+    <a href="HelpMates.html" class="logo">
+        <img src="./images/Logo.png" width="232" height="81" class="feature-img"></img>
+    </a>
+    <ul class="nav-menu">
+        <li class="nav-item activeitem">
+            <a href="HelpMates.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="SobreNos.html" class="nav-link">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+            <a href="Oportunidades.html" class="nav-link">Oportunidades</a>
+        </li>
+        <li class="nav-item">
+            <a href="Projeto.html" class="nav-link">Projeto</a>
+        </li>
+        <li class="nav-item">
+            <a href="Doaçoes.html" class="nav-link">Doações</a>
+        </li>
+        <li class="nav-item">
+            <a href="Contactos.html" class="nav-link">Contactos</a>
+        </li>
+        <li class="nav-item">
+            <a href="Login.html" class="nav-link">Login</a>
+        </li>
+    </ul>
+    <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
 
     <img class="foto-grande" src="images\projetos.png">
-    <div class="text-overlay">Projeto</div>
+    <div class="header-projeto">Projeto</div>
     <div>
-        <p class="titulo-apresentação">OS NOSSOS PROJETOS</p>
-        <p class="apresentação">Em baixo poderás encontrar alguns projetos que já nos passaram pelas mãos.</p>
+        <p class="titulo-texto-projeto">OS NOSSOS PROJETOS</p>
+        <p class="apresentação-texto-projeto">Em baixo poderás encontrar alguns projetos que já nos passaram pelas mãos.</p>
     </div>
 
     <div class="container">
         <div class="row">
           <div class="col-xl-6 image-wrapper">
-            <img src="images\slider1.png">
+            <img src="images\slider1.png" class="img-fluid">
           </div>
           <div class="col-xl-5 text-wrapper">
             <h2 class="slider-titulo">OCG - Salvar o Oceano</h2>
@@ -74,7 +81,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-6 image-wrapper">
-            <img src="images\Slider RM 2.png" alt="slide1">
+            <img src="images\Slider RM 2.png" alt="slide1"class="img-fluid">
           </div>
           <div class="col-xl-5 text-wrapper">
             <h2 class="slider-titulo">SGK - Race for the cure</h2>
@@ -93,7 +100,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-6 image-wrapper">
-            <img src="images\unsplash_A4Ax1ApccfA.png" alt="slide1">
+            <img src="images\unsplash_A4Ax1ApccfA.png" alt="slide1" class="img-fluid">
           </div>
           <div class="col-xl-5 text-wrapper">
             <h2 class="slider-titulo">Combate ao desperdício</h2>
@@ -148,7 +155,7 @@
       </div>
       
       <div class="row justify-content-center">
-        <p class="titulo-apresentação">OS NOSSOS IMPACTOS</p>
+        <p class="titulo-texto-projeto">OS NOSSOS IMPACTOS</p>
         <img src="images\mapa.png" alt="mapa de imapctos">
       </div>
     
@@ -163,7 +170,7 @@
           </div>
         </div>
 
-        <p class="titulo-apresentação">OS NOSSOS PARCEIROS</p>
+        <p class="titulo-texto-projeto">OS NOSSOS PARCEIROS</p>
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3">
@@ -275,4 +282,50 @@
           
 
 </body>
+
+<footer class="footer">
+  <div class="footer-left">
+      <img src="images\Logo.png">
+      <p></p>
+      <p>
+          Porque todos podemos ajudar.
+      </p>
+      
+  </div>
+  <ul class="footer-right">
+      <li>
+          <h2>Voluntários</h2>
+
+          <ul class="box">
+              <li><a href="Oportunidades.html">Oportunidades</a></li>
+              <li><a href="Doaçoes.html">Campanhas de doação</a></li>
+              <li><a href="Registo.html">Criar conta</a></li>
+              
+
+          </ul>
+      </li>
+      <li>
+          <h2>HelpMates</h2>
+
+          <ul class="box">
+              <li><a href="#">Projeto</a></li>
+              <li><a href="SobreNos.html">Sobre nós</a></li>
+          </ul>
+      </li>
+      
+      <li>
+          <h2>Contactos</h2>
+
+          <ul class="box">
+              <li><a href="#">Azurém, Guimarães</a></li>
+              <li><a href="#">987654321</a></li>
+              <li><a href="#"></a>contacto@helpmates.com</li>
+          </ul>
+      </li>
+  </ul>
+
+  <div class="footer-bottom">
+      <p>Todos os direitos reservados &copy;</p>
+  </div>
+</footer>
 </html>
