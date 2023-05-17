@@ -526,7 +526,6 @@ body {
   color: #1A202C;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
-  
 }
 .link{
   color: #0603ac;
@@ -796,6 +795,31 @@ li{
   
   .col-3 p {
     margin-bottom: 30px;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .text-overlay .text-center {
+    color: white;
+    font-size: 10vw; /* Tamanho da fonte em relação à largura da viewport */
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+    .text-overlay .text-center {
+      font-size: 14vw; /* Ajuste o tamanho da fonte para telas menores */
+    }
   }
 
 
