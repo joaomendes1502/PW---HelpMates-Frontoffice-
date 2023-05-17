@@ -958,6 +958,9 @@ li{
     left: 34%;
   }
 
+  .text-container {
+    display: none;
+  }
 
   /*Doações*/
 
