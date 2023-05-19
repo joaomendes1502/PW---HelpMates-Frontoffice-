@@ -38,9 +38,30 @@ var postarcoluna = [{
     "ref": "referencia"
 }];
 
+var imagemdetalhe = [{
+    "imagem": "./images/animais.jpg"
+}];
+
+var itensdetalhe = [{
+
+    "Descricaoo": "a associaçao removedora de aquecimentos...",
+    "Organizacao": "HelpMe",
+    "Data": "24-11-2002" ,
+    "Local": "Viana",
+    "VagasDisponiveis": "25",
+    "Contacto": "987654321"
+    
+}];
+
+
+
 
 
 
 localStorage.setItem("ImagensOportunidades", JSON.stringify(postar))
 
 localStorage.setItem("Oportunidades", JSON.stringify(postarcoluna))
+
+localStorage.setItem("ImagemDetalhe", JSON.stringify(imagemdetalhe))
+
+localStorage.setItem("ItensDetalhe", JSON.stringify(itensdetalhe))
