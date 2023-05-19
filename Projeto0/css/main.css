@@ -858,7 +858,9 @@ li{
   
   }
 
-  
+  .container {
+    margin-top: 50px;
+  }
 
   .image-wrapper {
     float: left;
