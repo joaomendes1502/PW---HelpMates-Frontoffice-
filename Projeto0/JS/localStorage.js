@@ -62,4 +62,6 @@ localStorage.setItem("ImagensOportunidades", JSON.stringify(postar))
 
 localStorage.setItem("Oportunidades", JSON.stringify(postarcoluna))
 
+localStorage.setItem("ImagemDetalhe", JSON.stringify(imagemdetalhe))
 
+localStorage.setItem("ItensDetalhe", JSON.stringify(itensdetalhe))
