@@ -44,3 +44,7 @@ var postarcoluna = [{
 localStorage.setItem("ImagensOportunidades", JSON.stringify(postar))
 
 localStorage.setItem("Oportunidades", JSON.stringify(postarcoluna))
+
+
+
+
