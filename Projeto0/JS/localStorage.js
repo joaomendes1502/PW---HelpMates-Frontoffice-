@@ -95,7 +95,7 @@ var postarcolunaDoaçoes = [{
     "DescricaoDoaçoes": "Doação de ração para animais.",
     "refDoaçoes": "referencia",
 
-    "Contacto": " 987654321",
+   /*"Contacto": " 987654321",*/
 
 
 
