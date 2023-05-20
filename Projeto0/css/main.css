@@ -998,10 +998,16 @@ li{
 
 
   /*Contactos*/
-  .contact{
-    margin-top: 50px;
-    margin-left: 100px;
+  .contact-item {
+    text-align: center;
   }
+
+ .contact-item img {
+   max-width: 20%;
+   height: auto;
+   position: relative;
+   z-index: 1;
+ }
 
 
 #c{

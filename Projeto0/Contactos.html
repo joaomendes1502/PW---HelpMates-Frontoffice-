@@ -39,7 +39,7 @@
                 <img src="./images/Logo.png" width="232" height="81" class="feature-img"></img>
             </a>
             <ul class="nav-menu">
-                <li class="nav-item activeitem">
+                <li class="nav-item">
                     <a href="HelpMates.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
@@ -54,7 +54,7 @@
                 <li class="nav-item">
                     <a href="Doaçoes.html" class="nav-link">Doações</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item activeitem">
                     <a href="Contactos.html" class="nav-link">Contactos</a>
                 </li>
                 <li class="nav-item">
@@ -68,14 +68,6 @@
             </div>
         </nav>
     </header>
-<<<<<<< Updated upstream
-
-    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4601.9622689047255!2d-8.296417034390112!3d41.45063803898929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24eff2732ad231%3A0x3048fe13f1faee11!2sUniversidade%20do%20Minho%20-%20Campus%20de%20Azur%C3%A9m!5e0!3m2!1spt-PT!2spt!4v1684183278448!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-    
-
-
-
-=======
     
     <div class="container-fluid">
         <div class="row">
@@ -90,35 +82,75 @@
         </div>
       </div>
 
-
-      <div class="contact">
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-            </svg>
-            <p>Alameda da Universidade, 4800-287, Guimarães</p>
+      <section class="mt-5 mb-5">
+        <h1 class="text-center mb-4">Os nossos contactos</h1>
+        <div class="container mt-2 mb-2">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-item">
+                        <img src="images/location.png" alt="Localização">
+                        <p class="mt-2"><strong>Alameda da Universidade, 4800-287 Guimarães</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-item">
+                        <img src="images/call.png" alt="Telefone">
+                        <p class="mt-2"><strong>(+351) 962666666</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-item">
+                        <img src="images/email.png" alt="E-mail">
+                        <p class="mt-2"><strong>helpmatesguimaraes@gmail.com</strong></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-          </svg>
-          <p> (+351) 96589666</p>
+    </section>
+    
+    <section class="mt-5 mb-5">
+        <div class="container mt-2 mb-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contacte-nos</h2>
+                    <p>Alguma dúvida ou feedback? Preencha o formulário abaixo para entrar em contato com a nossa equipa!</p>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="tema">Tema</label>
+                                <input type="text" class="form-control" id="tema" placeholder="Digite o tema da mensagem">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="5"
+                                    placeholder="Digite a sua mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4601.9622689047255!2d-8.296417034390112!3d41.45063803898929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24eff2732ad231%3A0x3048fe13f1faee11!2sUniversidade%20do%20Minho%20-%20Campus%20de%20Azur%C3%A9m!5e0!3m2!1spt-PT!2spt!4v1684183278448!5m2!1spt-PT!2spt"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-      </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
+    </section>
 
 
-    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4601.9622689047255!2d-8.296417034390112!3d41.45063803898929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24eff2732ad231%3A0x3048fe13f1faee11!2sUniversidade%20do%20Minho%20-%20Campus%20de%20Azur%C3%A9m!5e0!3m2!1spt-PT!2spt!4v1684183278448!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
     
-    
->>>>>>> Stashed changes
     <footer class="footer">
         <div class="footer-left">
             <img src="images\Logo.png">
