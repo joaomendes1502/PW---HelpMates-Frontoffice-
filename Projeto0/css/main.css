@@ -1006,6 +1006,11 @@ li{
 
 #c{
   height: 500px;
+  margin-top: 200px;
+}
+
+#desc{
+  text-align: justify;
 }
   
 
