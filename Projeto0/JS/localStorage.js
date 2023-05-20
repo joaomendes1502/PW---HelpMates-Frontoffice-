@@ -49,7 +49,8 @@ var itensdetalhe = [{
     "Data": " 24-11-2002" ,
     "Local": " Viana do Castelo",
     "VagasDisponiveis": " 25",
-    "Contacto": " 987654321"
+    "Contacto": " 987654321",
+    "ref": "HelpMates.html"
     
 }];
 

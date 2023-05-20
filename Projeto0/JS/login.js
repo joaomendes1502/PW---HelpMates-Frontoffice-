@@ -32,3 +32,18 @@ function loginn() {
 // Registrar evento de clique no botão de registo e login
 
 document.getElementById("login").addEventListener("click", loginn);
+
+
+function checkLoginExecutada() {
+  return typeof loginn === 'function';
+}
+
+if (checkLoginExecutada()) {
+  console.log('A função loginn foi executada.');
+} else {
+  window.location.href = "Login.html";
+}
+
+
+
+document.getElementById("comlogin").addEventListener("click", checkLoginExecutada);
