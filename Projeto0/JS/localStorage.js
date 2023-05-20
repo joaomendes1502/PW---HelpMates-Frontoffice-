@@ -15,14 +15,14 @@ var postar = [{
 var postarcoluna = [{
     "Tipo": "Animais",
     "Descricao": "Os animais precisam dos nossos cuidados e proteção, ajuda- nos a criar um futuro mais seguro e feliz para eles.",
-    "ref": "referencia"
+    "ref": "Detalhe.html"
 }, {
     "Tipo": "Educação",
     "Descricao": "O voluntariado na educação é uma oportunidade única para contribuir para a formação de uma sociedade mais justa.",
     "ref": "referencia"
 }, {
     "Tipo": "Meio ambiente",
-    "Descricao": "És preocupado com o ambiente? Faz a tua parte e ajuda-nos a preservar o meio ambiente e a garantir um futuro sustentável, o planeta está nas nossas mãos!",
+    "Descricao": "És preocupado com o ambiente? Faz a tua parte e ajuda-nos a preservar o meio ambiente.",
     "ref": "referencia"
 }, {
     "Tipo": "Turismo social",
@@ -47,13 +47,59 @@ var itensdetalhe = [{
 
     "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
     "Organizacao": "Animal Crossing",
-    "Data": " 24-11-2002" ,
+    "Data": " 24-11-2002",
     "Local": " Viana do Castelo",
     "VagasDisponiveis": " 25",
+
+    "Contacto": " 987654321"
+
+}];
+
+/*DOAÇÕES*/
+var postarDoaçoes = [{
+    "imagemDoaçoes": "./images/campanha1.png"
+}, {
+    "imagemDoaçoes": "./images/campanha2.png"
+}, {
+    "imagemDoaçoes": "./images/campanha3.png"
+}, {
+    "imagemDoaçoes": "./images/campanha4.png"
+}, {
+    "imagemDoaçoes": "./images/campanha5.png"
+}, {
+    "imagemDoaçoes": "./images/campanha6.png"
+}];
+
+var postarcolunaDoaçoes = [{
+    "TipoDoaçoes": "Categoria 1",
+    "DescricaoDoaçoes": "Garantir medicamentos para todas as crianças.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "refDoaçoes": "referencia"
+}, {
+    "TipoDoaçoes": "Categoria 2",
+    "DescricaoDoaçoes": "Garantir casas seguras para as crianças.",
+    "refDoaçoes": "referencia"
+}, {
+    "TipoDoaçoes": "Categoria 3",
+    "DescricaoDoaçoes": "Assistência de Animais",
+    "refDoaçoes": "referencia"
+}, {
+    "TipoDoaçoes": "Categoria 4",
+    "DescricaoDoaçoes": "Assegurar roupa para todas as crianças.",
+    "refDoaçoes": "referencia"
+}, {
+    "TipoDoaçoes": "Categoria 5",
+    "DescricaoDoaçoes": "Aulas de reforço escolar",
+    "refDoaçoes": "referencia"
+}, {
+    "TipoDoaçoes": "Categoria 6",
+    "DescricaoDoaçoes": "Doação de ração para animais.",
+    "refDoaçoes": "referencia",
+
     "Contacto": " 987654321",
     
 
     
+
 }];
 
 
@@ -68,3 +114,7 @@ localStorage.setItem("Oportunidades", JSON.stringify(postarcoluna))
 localStorage.setItem("ImagemDetalhe", JSON.stringify(imagemdetalhe))
 
 localStorage.setItem("ItensDetalhe", JSON.stringify(itensdetalhe))
+
+localStorage.setItem("ImagensDoaçoes", JSON.stringify(postarDoaçoes))
+
+localStorage.setItem("Doaçoes", JSON.stringify(postarcolunaDoaçoes))

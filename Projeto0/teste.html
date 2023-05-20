@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+        .card {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .pagination {
+            margin-top: 10px;
+        }
+        
+        .card-img-container {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .card-img-top {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .card-body {
+            height: 100px;
+            overflow: hidden;
+        }
+        
+        .pagination button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cardContainer"></div>
+    <div class="pagination">
+        <button id="prevBtn" disabled>&laquo; Previous</button>
+        <button id="nextBtn">Next &raquo;</button>
+    </div>
+
+    <script>
+        const cardsPerPage = 4;
+        let currentPage = 1;
+        const cardContainer = document.getElementById('cardContainer');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        // Retrieve cards data from local storage or use a default value
+        const cardsData = JSON.parse(localStorage.getItem('cardsData')) || [{
+            tipo: "Animais",
+            descricao: "Os animais precisam dos nossos cuidados e proteção, ajuda- nos a criar um futuro mais seguro e feliz para eles.",
+            ref: "referencia",
+            imagem: "./images/animais.jpg"
+        }, {
+            tipo: "Educação",
+            descricao: "O voluntariado na educação é uma oportunidade única para contribuir para a formação de uma sociedade mais justa.",
+            ref: "referencia",
+            imagem: "./images/educacao.jpeg"
+        }, {
+            tipo: "Meio ambiente",
+            descricao: "És preocupado com o ambiente? Faz a tua parte e ajuda-nos a preservar o meio ambiente e a garantir um futuro sustentável, o planeta está nas nossas mãos!",
+            ref: "referencia",
+            imagem: "./images/meio ambiente.jpeg"
+        }, {
+            tipo: "Turismo social",
+            descricao: "Gostas de viajar? Esta é uma maneira única de explorar novos lugares e, ao mesmo tempo, fazer diferença na vida das pessoas.",
+            ref: "referencia",
+            imagem: "./images/turismo social.jpg"
+        }, {
+            tipo: "Auxílio de doentes",
+            descricao: "Faça a diferença na vida de alguém, ajude a trazer conforto e apoio para aqueles que mais precisam.",
+            ref: "referencia",
+            imagem: "./images/auxilio doentes(2).jpg"
+        }, {
+            tipo: "Desporto",
+            descricao: "És apaixonado pelo desporto? Esta é a tua oportunidade de ajudar a construir uma comunidade mais ativa e saudável.",
+            ref: "referencia",
+            imagem: "./images/desporto.jpg"
+        }, {
+            tipo: "Desporto",
+            descricao: "És apaixonado pelo desporto? Esta é a tua oportunidade de ajudar a construir uma comunidade mais ativa e saudável.",
+            ref: "referencia",
+            imagem: "./images/desporto.jpg"
+        }, {
+            tipo: "Desporto",
+            descricao: "És apaixonado pelo desporto? Esta é a tua oportunidade de ajudar a construir uma comunidade mais ativa e saudável.",
+            ref: "referencia",
+            imagem: "./images/desporto.jpg"
+        }];
+
+        function createCard(cardData) {
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card';
+            cardDiv.innerHTML = `
+    <div class="card-img-container">
+      <img src="${cardData.imagem}" class="card-img-top" alt="${cardData.tipo}">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">${cardData.tipo}</h3>
+      <p class="card-text">${cardData.descricao}</p>
+    </div>
+  `;
+            return cardDiv;
+        }
+
+
+        function renderCards(page) {
+            const start = (page - 1) * cardsPerPage;
+            const end = start + cardsPerPage;
+            const cards = cardsData.slice(start, end);
+
+            cardContainer.innerHTML = '';
+
+            const cardGrid = document.createElement('div');
+            cardGrid.className = 'row';
+
+            for (let i = 0; i < cards.length; i += 2) {
+                const cardColumn = document.createElement('div');
+                cardColumn.className = 'col-md-6';
+
+                const card1 = createCard(cards[i]);
+                cardColumn.appendChild(card1);
+
+                if (i + 1 < cards.length) {
+                    const card2 = createCard(cards[i + 1]);
+                    cardColumn.appendChild(card2);
+                }
+
+                cardGrid.appendChild(cardColumn);
+            }
+
+            cardContainer.appendChild(cardGrid);
+
+            updatePaginationButtons();
+        }
+
+        function updatePaginationButtons() {
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === Math.ceil(cardsData.length / cardsPerPage);
+        }
+
+        /* function saveCardsToLocalStorage() {
+             localStorage.setItem('cardsData', JSON.stringify(cardsData2));
+         }*/
+
+        prevBtn.addEventListener('click', () => {
+            currentPage--;
+            renderCards(currentPage);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentPage++;
+            renderCards(currentPage);
+        });
+
+        // Initial rendering of cards
+        renderCards(currentPage);
+
+        // Save cards data to local storage whenever it changes
+        // window.addEventListener('beforeunload', saveCardsToLocalStorage);
+    </script>
+</body>
+
+</html>

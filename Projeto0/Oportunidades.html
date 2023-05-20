@@ -150,7 +150,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="JS\script.js"></script>
 
-    <script type="text/javascript">
+     <script type="text/javascript">
 
 
         let posts = JSON.parse(localStorage.getItem("ImagensOportunidades"))
@@ -159,8 +159,8 @@
         let colunaHTML = '';
         let z = 0;
 
-        for (let i = 0; i < posts.length / 2; i++) {
-            let html = '<div class="row g-6 justify-content-evenly">';
+        for (let i = 0; i < posts.length / 2; i++) { 
+            let html = '<div class="card_row row g-6 justify-content-evenly">'; // fila
             for (let j = z; j < z + 2 && j < posts.length; j++) {
                 let post = posts[j];
                 let post2 = postcoluna[j];
@@ -168,15 +168,15 @@
                     '<div class="card">' +
                     '<div class="row g-0">' +
                     '<div class="col-8 col-md-5">' +
-                    '<img src="' + post.imagem + '" style="width:100%; height:200px" ' +
-                    'class="card-img img-fluid rounded-start" alt="animais" />' +
+                    '<img src="' + post.imagem + '"class="card-imagem"  ' +
+                    'class="card-img img-fluid rounded-start" alt="imagem" />' +
                     '</div>' +
                     '<div class="col-4 col-md-7">' +
                     '<div class="card-body d-flex flex-column">' +
                     '<div class="h-100">' +
                     '<h3 class="card-title">' + post2.Tipo + '</h3>' +
                     '<p class="card-desc">' + post2.Descricao + '</p>' +
-                    '<p><a href="' + post2.ref + '">Inscrever-se <ion-icon name="arrow-forward-outline"></ion-icon></a></p>' +
+                    '<p><a href="' + post2.ref + '" class="btn btn-primary btn-card">Inscreve-te </a></p>' +
                     '</div>' +
                     '</div>' +
                     '</div>' +
@@ -185,7 +185,7 @@
                     '</div>';
                 html += html2;
             }
-            html += '</div>'; // a string html está a ser fechada com o elemento </div
+            html += '</div>'; // a string html está a ser fechada com o elemento </div  '">Inscrever-se <ion-icon name="arrow-forward-outline"></ion-icon></a></p>' +
             postsHTML += html;
             z += 2;
         }
@@ -193,7 +193,7 @@
         document.getElementById("postcolumn").innerHTML = postsHTML;
 
 
-    </script>
+    </script> 
 
     <script src="JS\localStorage.js"></script>
     <script src="JS/navbar.js"></script>
