@@ -15,14 +15,14 @@ var postar = [{
 var postarcoluna = [{
     "Tipo": "Animais",
     "Descricao": "Os animais precisam dos nossos cuidados e proteção, ajuda- nos a criar um futuro mais seguro e feliz para eles.",
-    "ref": "referencia"
+    "ref": "Detalhe.html"
 }, {
     "Tipo": "Educação",
     "Descricao": "O voluntariado na educação é uma oportunidade única para contribuir para a formação de uma sociedade mais justa.",
     "ref": "referencia"
 }, {
     "Tipo": "Meio ambiente",
-    "Descricao": "És preocupado com o ambiente? Faz a tua parte e ajuda-nos a preservar o meio ambiente e a garantir um futuro sustentável, o planeta está nas nossas mãos!",
+    "Descricao": "És preocupado com o ambiente? Faz a tua parte e ajuda-nos a preservar o meio ambiente.",
     "ref": "referencia"
 }, {
     "Tipo": "Turismo social",
