@@ -1173,6 +1173,21 @@ li {
 #desc{
   text-align: justify;
 }
+
+/*Galeria*/
+
+.titulo-galeria{
+  text-align: center;
+  font-size: 30px;
+  color: #1A8FE3;
+  margin-top: 130px;
+}
+
+.texto-galeria{
+  text-align: center;
+  font-size: 18px;
+  padding: 50px 50px;
+}
   
 
 
