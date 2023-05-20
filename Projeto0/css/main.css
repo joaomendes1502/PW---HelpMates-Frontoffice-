@@ -984,6 +984,14 @@ li{
   .text-container {
     display: none;
   }
+  
+  .contentor{
+    margin-top: 50px;
+  }
+
+  .container-parceiros{
+    margin-bottom: 8px;
+  }
 
   /*Doações*/
 
