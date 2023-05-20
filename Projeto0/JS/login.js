@@ -21,6 +21,7 @@ function loginn() {
 
   // Login bem-sucedido, redirecionar para a página de perfil do utilizador
   alert('Login bem-sucedido');
+  localStorage.setItem('UtilizadorLogado', JSON.stringify(user));
 
   
   window.location.href = "HelpMates.html";
