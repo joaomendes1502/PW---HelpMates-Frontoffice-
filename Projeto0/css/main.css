@@ -97,7 +97,7 @@
   
 }
 
-.container {
+.containerr {
   display: flex;
   justify-content: center;
   margin-top: -80px;
@@ -167,7 +167,7 @@
 }
 
 @media only screen and (max-width: 990px) {
-  .container {
+  .containerr {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,6 +344,18 @@
   height: 200px;
 }
 
+.posts{
+  margin-top: 180px;
+  margin-bottom: -70px;
+}
+
+#c{
+  height: 500px;
+}
+
+#desc{
+  text-align: justify;
+}
 
 
 
@@ -821,6 +833,198 @@ li{
       font-size: 14vw; /* Ajuste o tamanho da fonte para telas menores */
     }
   }
+
+
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .text-overlay .text-center {
+    color: white;
+    font-size: 10vw; /* Tamanho da fonte em relação à largura da viewport */
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+    .text-overlay .text-center {
+      font-size: 14vw; /* Ajuste o tamanho da fonte para telas menores */
+    }
+  }
+
+  /*Projeto*/
+  .titulo-projeto{
+    color:#1A8FE3;
+    font-size: 30px;
+    margin-top: 120px;
+    
+  }
+
+  .header-projeto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 130px;
+    font-weight: bold;
+  }
+  
+  .titulo-texto-projeto{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+  
+  }
+  
+  .apresentação-texto-projeto{
+    margin-top: 20;
+    font-size: 23px;
+    text-align: center;
+  
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .image-wrapper {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .text-wrapper {
+    overflow: hidden; 
+    margin-top: 50px;
+  }
+
+  .icon-orange {
+    color: orange;
+  }
+
+  .slider-titulo {
+    color: rgba(26,143,227,1);
+    font-size: 32px;
+  }
+
+  .blue-text {
+    color: #1A8FE3;
+  }
+
+  .slider-text-space{
+    margin-top: 20px;
+  }
+
+  .image {
+    width: 102;
+    height: 102;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .map-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+
+  .circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+  }
+
+  .circle-info {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+  }
+
+
+  .hide{
+    background-color: #00d8ff;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-size: 12px;
+  }
+
+  .cls-1 {
+    fill: #00d8ff;
+    stroke: #000;
+    stroke-width: 1px;
+  }
+  
+  .kenya-txt{
+    top: 740%;
+    left: 47%;
+  }
+
+  .brazil-txt{
+    top: 748%;
+    left: 25%;
+  }
+
+  .portugal-txt{
+    top: 713%;
+    left: 34%;
+  }
+
+  .text-container {
+    display: none;
+  }
+
+  /*Doações*/
+
+ /*Detalhe*/
+
+ .goback{
+  margin-top: 120px;
+  margin-left: 30px;
+  margin-bottom: 90px;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+ }
+
+ .goback:hover{
+  
+    margin-top: 120px;
+    margin-left: 30px;
+    margin-bottom: 90px;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+ }
 
 
 

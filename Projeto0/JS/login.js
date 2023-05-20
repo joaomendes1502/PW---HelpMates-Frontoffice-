@@ -25,7 +25,7 @@ function loginn() {
   
   window.location.href = "HelpMates.html";
   
-  // redirecionar para a página de perfil do utilizador
+ 
 }
 
 
