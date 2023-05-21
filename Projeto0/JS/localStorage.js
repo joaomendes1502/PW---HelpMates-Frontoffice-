@@ -14,11 +14,11 @@ var postar = [{
 
 var postarcoluna = [{
     "Tipo": "Animais",
-    "Descricao": "Os animais precisam dos nossos cuidados e proteção, ajuda- nos a criar um futuro mais seguro e feliz para eles.",
+    "Descricao": "Os animais precisam dos nossos cuidados e proteção, cria um futuro mais seguro e feliz para eles.",
     "ref": "Detalhe.html"
 }, {
     "Tipo": "Educação",
-    "Descricao": "O voluntariado na educação é uma oportunidade única para contribuir para a formação de uma sociedade mais justa.",
+    "Descricao": "O voluntariado na educação é importante para contribuir para uma sociedade mais justa.",
     "ref": "referencia"
 }, {
     "Tipo": "Meio ambiente",
@@ -26,7 +26,7 @@ var postarcoluna = [{
     "ref": "referencia"
 }, {
     "Tipo": "Turismo social",
-    "Descricao": "Gostas de viajar? Esta é uma maneira única de explorar novos lugares e, ao mesmo tempo, fazer diferença na vida das pessoas.",
+    "Descricao": "Gostas de viajar? Agarra na oportunidade de explorar novos lugares e ajudar pessoas.",
     "ref": "referencia"
 }, {
     "Tipo": "Auxílio de doentes",
@@ -34,7 +34,7 @@ var postarcoluna = [{
     "ref": "referencia"
 }, {
     "Tipo": "Desporto",
-    "Descricao": "És apaixonado pelo desporto? Esta é a tua oportunidade de ajudar a construir uma comunidade mais ativa e saudável.",
+    "Descricao": "És apaixonado pelo desporto? Esta é a tua oportunidade de ajudar a construir uma comunidade mais ativa.",
     "ref": "referencia"
 }];
 
