@@ -341,10 +341,10 @@
 }
 
 
-.grelha{
-  position:relative;
+.grelha {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2%;
   margin-bottom: 10%;
 }
@@ -783,7 +783,7 @@ li {
 
 /* Oportunidades */
 
-.frase-inicial{
+.frase-inicial {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   padding: 15px;
@@ -794,12 +794,13 @@ li {
   color: #555;
 }
 
-.quote{
+.quote {
   margin-top: 5px;
   font-size: 14px;
   font-weight: bold;
   color: #999;
 }
+
 .frase-inicial mb-4 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -809,49 +810,49 @@ li {
   margin-bottom: 20px;
 }
 
-.container-opo{
+.container-opo {
   max-width: 600px;
 }
 
 .btn-card {
-  right:2rem;
+  right: 2rem;
   bottom: 1rem;
   align-items: center;
 }
 
-.btn-location{
-  float:right;
+.btn-location {
+  float: right;
 }
 
-.card_row{
-  margin-bottom:10px;
+.card_row {
+  margin-bottom: 10px;
   position: relative;
-  display:flex;
+  display: flex;
   padding: 20px;
 
 }
 
-.card-imagem{
-  width:100%;
+.card-imagem {
+  width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.card-body{
- display: flex ;
- flex-wrap: wrap;
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card-descricao{
+.card-descricao {
   font-family: Times, Times New Roman, serif;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1000px){
-  .card-descricao{
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .card-descricao {
     font-size: smaller;
   }
 
-  .btn-card{
+  .btn-card {
     font-size: 14px;
   }
 }
@@ -861,15 +862,15 @@ li {
     display: none;
   }
 
-  .btn-card{
-  float:right;
+  .btn-card {
+    float: right;
   }
 }
 
 /*.card-desc{
   text-align: center; /* Centraliza horizontalmente o texto */
-  /*align-items: center; /* Centraliza verticalmente o texto */
-  /* max-height: 100px; */
+/*align-items: center; /* Centraliza verticalmente o texto */
+/* max-height: 100px; */
 
 /* Sobre Nos */
 
@@ -912,7 +913,7 @@ li {
   flex-wrap: wrap;
 }
 
-.col-3 {
+.t3 {
   flex: 0 0 25%;
   max-width: 25%;
   text-align: center;
@@ -934,30 +935,33 @@ li {
   margin-bottom: 30px;
 }
 
-  .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
 
+.text-overlay .text-center {
+  color: white;
+  font-size: 10vw;
+  /* Tamanho da fonte em relação à largura da viewport */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  /* Estilos para telas menores que 768px */
   .text-overlay .text-center {
-    color: white;
-    font-size: 10vw; /* Tamanho da fonte em relação à largura da viewport */
-    font-weight: bold;
+    font-size: 14vw;
+    /* Ajuste o tamanho da fonte para telas menores */
   }
-  
-  @media (max-width: 768px) {
-    /* Estilos para telas menores que 768px */
-    .text-overlay .text-center {
-      font-size: 14vw; /* Ajuste o tamanho da fonte para telas menores */
-    }
-  }
+}
 
 
 .text-overlay {
@@ -1123,21 +1127,27 @@ li {
   left: 34%;
 }
 
-  .text-container {
-    display: none;
-  }
-  
-  .contentor{
-    margin-top: 50px;
-  }
-
-  .container-parceiros{
-    margin-bottom: 8px;
-  }
-
-
 .text-container {
   display: none;
+}
+
+.contentor {
+  margin-top: 50px;
+}
+
+.container-parceiros {
+  margin-bottom: 8px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.linha{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -1154,31 +1164,38 @@ li {
 
 
 .owl-carousel .itemDoador {
-  width: 300px; /* Defina a largura desejada para os itens do carrossel */
+  width: 300px;
+  /* Defina a largura desejada para os itens do carrossel */
 }
 
-.card-titleDoadores{
-  text-align: center; /* Centraliza horizontalmente o texto */
-  align-items: center; /* Centraliza verticalmente o texto */
-  height: 100%; /* Garante que o elemento ocupe toda a altura disponível */
+.card-titleDoadores {
+  text-align: center;
+  /* Centraliza horizontalmente o texto */
+  align-items: center;
+  /* Centraliza verticalmente o texto */
+  height: 100%;
+  /* Garante que o elemento ocupe toda a altura disponível */
 }
 
-.card-textDoadores{
-  text-align: center; /* Centraliza horizontalmente o texto */
-  align-items: center; /* Centraliza verticalmente o texto */
-  height: 100%; /* Garante que o elemento ocupe toda a altura disponível */
+.card-textDoadores {
+  text-align: center;
+  /* Centraliza horizontalmente o texto */
+  align-items: center;
+  /* Centraliza verticalmente o texto */
+  height: 100%;
+  /* Garante que o elemento ocupe toda a altura disponível */
 }
 
-.card_row{
-  margin-bottom:10px;
+.card_row {
+  margin-bottom: 10px;
   position: relative;
-  display:flex;
+  display: flex;
   padding: 20px;
 
 }
 
-.card-imagem{
-  width:100%;
+.card-imagem {
+  width: 100%;
   height: 200px;
   object-fit: cover;
 }
@@ -1199,17 +1216,17 @@ li {
 
 
 
-  /*Contactos*/
-  .contact-item {
-    text-align: center;
-  }
+/*Contactos*/
+.contact-item {
+  text-align: center;
+}
 
- .contact-item img {
-   max-width: 20%;
-   height: auto;
-   position: relative;
-   z-index: 1;
- }
+.contact-item img {
+  max-width: 20%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
 
 
 .goback:hover {
@@ -1224,30 +1241,46 @@ li {
   font-weight: bold;
 }
 
-#c{
+#c {
   height: 500px;
   margin-top: 100px;
 }
 
-#desc{
+#desc {
   text-align: justify;
 }
 
 /*Galeria*/
 
-.titulo-galeria{
+.titulo-galeria {
   text-align: center;
   font-size: 30px;
   color: #1A8FE3;
   margin-top: 130px;
 }
 
-.texto-galeria{
+.texto-galeria {
   text-align: center;
   font-size: 18px;
   padding: 50px 50px;
 }
-  
+
+.image-zoom {
+  overflow: visible;
+  width: 468px;
+  height: 375px;
+}
+
+.image-zoom img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.2);
+}
+
 
 /*Contactos*/
 
@@ -1262,15 +1295,15 @@ li {
 }
 
 .contact-item {
-    text-align: center;
-  }
+  text-align: center;
+}
 
- .contact-item img {
-   max-width: 20%;
-   height: auto;
-   position: relative;
-   z-index: 1;
- }
+.contact-item img {
+  max-width: 20%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
 
 body {
   color: #1A202C;
@@ -1278,10 +1311,3 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
-
-
- 
-
-  
-
-
