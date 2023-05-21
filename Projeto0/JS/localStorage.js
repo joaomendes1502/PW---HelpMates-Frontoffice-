@@ -47,6 +47,9 @@ var imagemdetalhe = [{
 },{
     "imagem": "./images/animais.jpg",
     "Tipo": "Animais"
+},{
+    "imagem": "./images/educacao.jpeg",
+    "Tipo": "Educação"
 }];
 
 var itensdetalhe = [{
@@ -69,7 +72,7 @@ var itensdetalhe = [{
     "Local": " Lisboa",
     "VagasDisponiveis": " 20",
     "Tipo": "Educação",
-    "Contacto": " 987654321"
+    "Contacto": " 987654390"
 
 },{
 
@@ -81,6 +84,17 @@ var itensdetalhe = [{
     "VagasDisponiveis": " 25",
     "Tipo": "Animais",
     "Contacto": " 987654320"
+
+},{
+
+
+    "Descricaoo": "Escolas sao bue fixes",
+    "Organizacao": "Educational",
+    "Data": " 23-04-2003",
+    "Local": " Lisboa",
+    "VagasDisponiveis": " 20",
+    "Tipo": "Educação",
+    "Contacto": " 987654377"
 
 }];
 
