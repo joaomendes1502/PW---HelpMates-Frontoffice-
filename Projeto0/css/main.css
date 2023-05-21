@@ -341,6 +341,14 @@
 }
 
 
+.grelha{
+  position:relative;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2%;
+  margin-bottom: 10%;
+}
+
 
 
 .card-text {
