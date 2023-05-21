@@ -40,6 +40,8 @@ var postarcoluna = [{
 
 var imagemdetalhe = [{
     "imagem": "./images/animais.jpg"
+},{
+    "imagem": "./images/educacao.jpeg"
 }];
 
 var itensdetalhe = [{
@@ -50,6 +52,17 @@ var itensdetalhe = [{
     "Data": " 24-11-2002",
     "Local": " Viana do Castelo",
     "VagasDisponiveis": " 25",
+
+    "Contacto": " 987654321"
+
+},{
+
+
+    "Descricaoo": "Escolas sao bue fixes",
+    "Organizacao": "Educational",
+    "Data": " 23-04-2003",
+    "Local": " Lisboa",
+    "VagasDisponiveis": " 20",
 
     "Contacto": " 987654321"
 
