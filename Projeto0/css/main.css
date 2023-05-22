@@ -1282,7 +1282,13 @@ li {
 .image-zoom:hover img {
   transform: scale(1.2);
 }
+/*Detalhe*/
 
+.card2 {
+  border: none; /* Remover as bordas do cartão */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+}
 
 /*Contactos*/
 

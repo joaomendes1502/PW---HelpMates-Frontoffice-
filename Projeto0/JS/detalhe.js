@@ -15,10 +15,10 @@ if (TipoSelecionado) {
         const postElement = document.createElement('div');
         postElement.classList.add("cartao1");
         postElement.innerHTML = '<div id="' + texto[i].Organizacao + '" class="cartaodinamico">' +
-            '<div id = "c" class="card">' +
+            '<div id = "c" class="card2">' +
             '<div class="row g-0">' +
             '<div class="col-8 col-md-5">' +
-            '<img src="' + imagens[i].imagem + '" style="width:auto; height:auto" ' +
+            '<img src="' + imagens[i].imagem + '" style="width:auto; height:auto; padding-right:20px" ' +
             'class="card-img img-fluid rounded-start" alt="animais" />' +
             '</div>' +
             '<div class="col-4 col-md-7">' +
