@@ -1342,7 +1342,7 @@ body {
 }
 
 #edit-profile-button {
-  background-color: #4CAF50;
+  background-color: #1E88E5;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -1351,7 +1351,7 @@ body {
 }
 
 #edit-profile-button:hover {
-  background-color: #45a049;
+  background-color: #1E88E5;
 }
 
 /* parte do formulario de editar dados */
@@ -1384,7 +1384,7 @@ body {
 }
 
 #edit-profile-form button[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #1E88E5;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -1393,7 +1393,7 @@ body {
 }
 
 #edit-profile-form button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color:#1E88E5;
 }
 
 #edit-profile-form .error {
@@ -1404,4 +1404,24 @@ body {
 #edit-profile-form .success {
   color: green;
   margin-top: 5px;
+}
+
+#user-marcacao{
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+
+#user-marcacao h2 {
+  margin-bottom: 10px;
+}
+
+#user-marcacao div {
+  margin-bottom: 10px;
+}
+
+#user-marcacao label {
+  font-weight: bold;
 }

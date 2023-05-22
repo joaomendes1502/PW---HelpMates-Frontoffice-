@@ -47,33 +47,44 @@
         </nav>
     </header>
 
+    <!-- Informação Pessoal Usuario-->
     <div>
-      <p class="titulo-texto-projeto">Informação Pessoal</p>
+        <p class="titulo-texto-projeto">Informação Pessoal</p>
     </div>
 
 
     <section id="user-data-container">
-        <h2>Dados do Usuário</h2>
+        <h2>Dados do Utilizador</h2>
         <div>
-          <label for="username">Nome de usuário:</label>
-          <p id="display-username"></p>
+            <label for="name">Nome Utilizador:</label>
+            <p id="display-name"></p>
         </div>
         <div>
-          <label for="name">Nome:</label>
-          <p id="display-name"></p>
+            <label for="username">Username:</label>
+            <p id="display-username"></p>
         </div>
         <div>
-          <label for="email">Email:</label>
-          <p id="display-email"></p>
+            <label for="email">Email:</label>
+            <p id="display-email"></p>
         </div>
 
         <div id="buttons">
             <button id="edit-profile-button">Editar Perfil</button>
-          </div>
+        </div>
 
-      </section>
+    </section>
 
-<!-- FOOTER-->
+    <!-- Marcações usuario-->
+    <section id="user-marcacao">
+        <h2>Marcações do utilizador</h2>
+        <div id="marcacoes-container"></div>
+
+    </section>
+
+    <!-- Botão Logout-->
+    <button id="logout-button">Logout</button>
+
+    <!-- FOOTER-->
     <footer class="footer">
         <div class="footer-left">
             <img src="images\Logo.png">
@@ -119,10 +130,11 @@
             <p>Todos os direitos reservados &copy;</p>
         </div>
     </footer>
-   
+
     <script src="JS/navbar.js"></script>
     <script src="JS\dadosuser.js"></script>
-    
+    <script src="JS\marcacao.js"></script>
+
 
 </body>
 
