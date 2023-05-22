@@ -1355,7 +1355,7 @@ body {
 }
 
 /* parte do formulario de editar dados */
-form {
+#edit-profile-form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -1363,19 +1363,19 @@ form {
   border-radius: 5px;
 }
 
-h1 {
+#edit-profile-form h1 {
   text-align: center;
 }
 
-label {
+#edit-profile-form label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+#edit-profile-form input[type="text"],
+#edit-profile-form input[type="email"],
+#edit-profile-form input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -1383,7 +1383,7 @@ input[type="password"] {
   border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+#edit-profile-form button[type="submit"] {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
@@ -1392,16 +1392,16 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+#edit-profile-form button[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.error {
+#edit-profile-form .error {
   color: red;
   margin-top: 5px;
 }
 
-.success {
+#edit-profile-form .success {
   color: green;
   margin-top: 5px;
 }
