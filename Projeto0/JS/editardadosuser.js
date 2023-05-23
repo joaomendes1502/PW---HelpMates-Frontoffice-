@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Obter os elementos de entrada de dados
     var nameInput = document.getElementById('name-input');
-    var usernameInput = document.getElementById('username-input');
+    var passwordInput = document.getElementById('password-input');
     var emailInput = document.getElementById('email-input');
     var saveChangesButton = document.getElementById('save-changes-button');
 
@@ -18,16 +18,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Preencher os campos de entrada com os dados do usuário
         nameInput.value = useredicao.nome;
-        usernameInput.value = useredicao.username;
         emailInput.value = useredicao.email;
+        passwordInput.value = useredicao.password;
     }
 
     // Lidar com o evento de clique no botão de guardar alterações
     saveChangesButton.addEventListener('click', function () {
         // Obter os valores atualizados dos campos de entrada
         var updatedName = nameInput.value;
-        var updatedUsername = usernameInput.value;
         var updatedEmail = emailInput.value;
+        var updatedPassword = passwordInput.value;
+
+        if (!updatedName || !updatedEmail || !updatedPassword) {
+            alert('Por favor, preencha todos os campos.');
+            return; // Interrompe a execução da função
+          }
+
+
+          let emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(updatedEmail);
+
+          if(!emailValido){
+              alert('Por favor, introduza um email válido');
+              return;
+          }
+
+          if (updatedPassword.length < 6 || !/\d/.test(updatedPassword)) {
+            alert("A senha deve ter pelo menos 6 caracteres e conter pelo menos 1 número.");
+            return;
+          }
 
         // Obter os dados do usuário armazenados no LocalStorage
         var storedUserData = localStorage.getItem('UtilizadorLogado');
@@ -36,8 +54,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Atualizar os dados do usuário com os valores dos campos de entrada atualizados
             storedUser.nome = updatedName;
-            storedUser.username = updatedUsername;
             storedUser.email = updatedEmail;
+            storedUser.password = updatedPassword;
+
 
             // Armazenar os dados atualizados no LocalStorage na chave 'utilizador'
             localStorage.setItem('utilizador', JSON.stringify(storedUser));
@@ -47,9 +66,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Exibir uma mensagem de sucesso (opcional)
             alert('Alterações guardadas com sucesso!');
+
+
+            window.location.href = 'PerfilUser.html';
+
         }
 
-        // Redirecionar de volta para a página "Ver utilizador"
-        window.location.href = 'PerfilUser.html';
+
     });
 });

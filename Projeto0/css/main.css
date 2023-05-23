@@ -1365,7 +1365,11 @@ body {
 
 #edit-profile-form h1 {
   text-align: center;
-}
+}  
+
+#edit-profile-form {
+  margin-top: 200px;
+}  
 
 #edit-profile-form label {
   display: block;
