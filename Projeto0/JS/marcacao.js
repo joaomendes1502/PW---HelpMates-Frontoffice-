@@ -45,17 +45,6 @@ if (marcaData.length > 0) {
   mensagemElement.textContent = 'Nenhuma marcação encontrada.';
   marcacoesContainer.appendChild(mensagemElement);
 }
-// Localizar o elemento do botão de logout no seu HTML
-var logoutButton = document.getElementById('logout-button');
-
-// Adicionar um ouvinte de evento para o botão de logout
-logoutButton.addEventListener('click', function() {
-  // Limpar o localStorage
-  localStorage.clear();
-
-  // Redirecionar o usuário para a página de login ou para onde for apropriado
-  window.location.href = 'HelpMates.html';
-});
 
 
 

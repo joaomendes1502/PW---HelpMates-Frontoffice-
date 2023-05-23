@@ -43,4 +43,44 @@ logoutButton.addEventListener('click', function() {
   window.location.href = 'HelpMates.html';
 });
 
-}
+  // Preencher os campos com os dados do usuário
+  //document.getElementById('username').value = userr.username;
+  //document.getElementById('name').value = userr.nome;
+  //document.getElementById('email').value = userr.email;
+  //document.getElementById('password').value = userr.password;
+
+  // Adicionar evento de envio do formulário
+  //document.getElementById('edit-profile-form').addEventListener('submit', function (event) {
+    //event.preventDefault(); // Evitar que a página seja recarregada após o envio do formulário
+
+    // Obter os valores atualizados do formulário
+    //var updatedUsername = document.getElementById('username').value;
+    //var updatedName = document.getElementById('name').value;
+    //var updatedEmail = document.getElementById('email').value;
+    //var updatedPassword = document.getElementById('password').value;
+
+    // Atualizar os dados do usuário no objeto
+    //userr.username = updatedUsername;
+    //userr.nome = updatedName;
+    //userr.email = updatedEmail;
+    //userr.password = updatedPassword;
+
+    // Atualizar os dados no localStorage
+    //localStorage.setItem('UtilizadorLogado', JSON.stringify(userr));
+
+    // Redirecionar para a página de perfil ou exibir uma mensagem de sucesso
+    //alert('Perfil atualizado com sucesso!');
+    // window.location.href = 'perfil.html'; // Redirecionar para a página de perfil
+  //});
+
+
+  // Exibir os dados na página - pilacelos
+
+  //document.getElementById('username').value = userr.username;
+  //document.getElementById('name').value = userr.nome;
+  //document.getElementById('email').value = userr.email;
+  //document.getElementById('password').value = userr.password;
+} //else {
+  // Caso não haja dados no localStorage
+  //console.log('Nenhum dado encontrado.');
+//}
