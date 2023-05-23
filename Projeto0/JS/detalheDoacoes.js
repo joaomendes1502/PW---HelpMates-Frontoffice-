@@ -1,5 +1,5 @@
-let posts = JSON.parse(localStorage.getItem("ImagemDetalheDoaçoes"))
-let postcoluna = JSON.parse(localStorage.getItem("ItensDetalheDoaçoes"))
+let posts = JSON.parse(localStorage.getItem("ImagemDetalhe"))
+let postcoluna = JSON.parse(localStorage.getItem("ItensDetalhe"))
 let postsHTML = '';
 let colunaHTML = '';
 let z = 0;
@@ -42,34 +42,5 @@ if (TipoSelecionado) {
 
 
     };
-
-    const botoes = document.querySelectorAll(".cartaodinamico");
-    console.log(botoes);
-    botoes.forEach((botao) => {
-        const idcartao = botao.querySelector(".marcar");
-        idcartao.addEventListener('click', () => {
-            const Logado = JSON.parse(localStorage.getItem('UtilizadorLogado'));
-            const Op = JSON.parse(localStorage.getItem('ItensDetalhe'));
-            const Op1 = Op.filter(post=>post.Contacto===idcartao.id);
-            
-            if (Logado) {
-                
-                let marca = { "estado": "Pendente", "Organizacao": Op1[0].Organizacao, "Contacto": Op1[0].Contacto, "Data": Op1[0].Data, "Vagas": Op1[0].Vagas, "username": Logado.username }
-                const Data1 = JSON.parse(localStorage.getItem('marcacao')) || [];
-                const EC = Data1.find(obj => obj.Contacto===marca.Contacto)
-                if(EC){
-                    alert('Você já se candidatou para esta vaga.');
-                }else{
-                    alert('Marcação registada, aguarde por confirmação');
-                    Data1.push(marca);
-                    localStorage.setItem("marcacao", JSON.stringify(Data1));
-                }
-                
-                
-            }else{
-                window.location.href="Login.html";
-            }
-        })
-    })
 
 }

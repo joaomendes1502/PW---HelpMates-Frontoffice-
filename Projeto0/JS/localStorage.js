@@ -140,8 +140,69 @@ var postarcolunaDoaçoes = [{
 
     "Contacto": " 987654321",
     
+}];
 
-    
+var imagemdetalheDoaçoes = [{
+    "imagemDoaçoes": "./images/campanha1.png",
+    "TipoDoaçoes": "Categoria 1"
+},{
+    "imagemDoaçoes": "./images/campanha2.png",
+    "TipoDoaçoes": "Categoria 2"
+},{
+    "imagemDoaçoes": "./images/campanha3.png",
+    "TipoDoaçoes": "Categoria 3"
+},{
+    "imagemDoaçoes": "./images/campanha4.png",
+    "TipoDoaçoes": "Categoria 4"
+},{
+    "imagemDoaçoes": "./images/campanha5.png",
+    "TipoDoaçoes": "Categoria 5"
+},{
+    "imagemDoaçoes": "./images/campanha6.png",
+    "TipoDoaçoes": "Categoria 6"
+}];
+
+var itensdetalheDoaçoes = [{
+
+    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
+    "Organizacao": "Animal Crossing",
+    "Data": " 24-11-2002",
+    "Local": " Viana do Castelo",
+    "TotalArrecadado": " 25",
+    "Tipo": "Categoria 1",
+    "Contacto": " 987654321"
+
+},{
+
+    "Descricaoo": "Escolas sao bue fixes",
+    "Organizacao": "Educational",
+    "Data": " 23-04-2003",
+    "Local": " Lisboa",
+    "VagasDisponiveis": " 20",
+    "Tipo": "Categoria 2",
+    "Contacto": " 987654390"
+
+},{
+
+
+    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
+    "Organizacao": "Animal Crossing",
+    "Data": " 24-11-2002",
+    "Local": " Viana do Castelo",
+    "VagasDisponiveis": " 25",
+    "Tipo": "Categoria 1",
+    "Contacto": " 987654320"
+
+},{
+
+
+    "Descricaoo": "Escolas sao bue fixes",
+    "Organizacao": "Educational",
+    "Data": " 23-04-2003",
+    "Local": " Lisboa",
+    "VagasDisponiveis": " 20",
+    "Tipo": "Categoria 2",
+    "Contacto": " 987654377"
 
 }];
 
@@ -161,3 +222,7 @@ localStorage.setItem("ItensDetalhe", JSON.stringify(itensdetalhe))
 localStorage.setItem("ImagensDoaçoes", JSON.stringify(postarDoaçoes))
 
 localStorage.setItem("Doaçoes", JSON.stringify(postarcolunaDoaçoes))
+
+localStorage.setItem("ImagemDetalheDoaçoes", JSON.stringify(imagemdetalheDoaçoes))
+
+localStorage.setItem("ItensDetalheDoaçoes", JSON.stringify(itensdetalheDoaçoes))
