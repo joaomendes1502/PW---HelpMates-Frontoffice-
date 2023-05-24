@@ -22,7 +22,7 @@ if (TipoSelecionado) {
             'class="card-img img-fluid rounded-start" alt="animais" />' +
             '</div>' +
             '<div class="col-4 col-md-7">' +
-            '<div class="card-body d-flex flex-column">' +
+            '<div id="body-detalhe" class="card-body d-flex flex-column">' +
             '<div class="h-100">' +
             '<h3 id="Organizacao" class="card-title">' + texto[i].Organizacao + '</h3>' +
             '<p id="desc" class="card-desc">' + texto[i].Descricaoo + '</p>' +
