@@ -1078,7 +1078,7 @@ li {
   margin-top: 8px;
 }
 
-.linha{
+.linha {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -1096,6 +1096,83 @@ li {
 
 /*Doações*/
 
+.postsDoacoes {
+  margin-bottom: 20px;
+}
+
+.containerDoacoes {
+  max-width: 600px;
+}
+
+.btn-cardDoacoes {
+  right: 3rem;
+  bottom: 1rem;
+  align-items: center;
+
+
+}
+
+.btn-locationDoacoes {
+  float: right;
+
+}
+
+.row-doacoes {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  padding: 20px;
+
+}
+
+.card-imagemDoacoes {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.card-bodyDoacoes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+
+
+}
+
+.card-titleDoacoes {
+  margin-left: 10px;
+}
+
+.card-descDoacoes {
+  font-family: Times, Times New Roman, serif;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .card-descDoacoes {
+    font-size: smaller;
+  }
+
+  .btn-cardDoacoes {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  .card-descDoacoes {
+    display: none;
+  }
+
+  .btn-cardDoacoes {
+    float: right;
+  }
+}
+
+
 .linhaDoadores {
   text-align: center;
   font-size: 24px;
@@ -1103,7 +1180,6 @@ li {
   margin-top: 200px;
   margin-bottom: 100px;
 }
-
 
 
 .owl-carousel .itemDoador {
@@ -1129,19 +1205,6 @@ li {
   /* Garante que o elemento ocupe toda a altura disponível */
 }
 
-.card_row {
-  margin-bottom: 10px;
-  position: relative;
-  display: flex;
-  padding: 20px;
-
-}
-
-.card-imagem {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
 
 
 /*Detalhe*/
@@ -1223,10 +1286,12 @@ li {
 .image-zoom:hover img {
   transform: scale(1.2);
 }
+
 /*Detalhe*/
 
 .card2 {
-  border: none; /* Remover as bordas do cartão */
+  border: none;
+  /* Remover as bordas do cartão */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   padding: 40px;
 }
@@ -1306,11 +1371,11 @@ body {
 
 #edit-profile-form h1 {
   text-align: center;
-}  
+}
 
 #edit-profile-form {
   margin-top: 200px;
-}  
+}
 
 #edit-profile-form label {
   display: block;
@@ -1338,7 +1403,7 @@ body {
 }
 
 #edit-profile-form button[type="submit"]:hover {
-  background-color:#1E88E5;
+  background-color: #1E88E5;
 }
 
 #edit-profile-form .error {
@@ -1351,7 +1416,7 @@ body {
   margin-top: 5px;
 }
 
-#user-marcacao{
+#user-marcacao {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #f2f2f2;
