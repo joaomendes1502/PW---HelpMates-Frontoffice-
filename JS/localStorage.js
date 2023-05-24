@@ -115,7 +115,7 @@ var postarDoaçoes = [{
 
 var postarcolunaDoaçoes = [{
     "TipoDoaçoes": "Categoria 1",
-    "DescricaoDoaçoes": "Garantir medicamentos para todas as crianças.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "DescricaoDoaçoes": "Garantir medicamentos para todas as crianças.",
     "refDoaçoes": "referencia"
 }, {
     "TipoDoaçoes": "Categoria 2",
@@ -138,10 +138,10 @@ var postarcolunaDoaçoes = [{
     "DescricaoDoaçoes": "Doação de ração para animais.",
     "refDoaçoes": "referencia",
 
-    "Contacto": " 987654321",
-    
+   /*"Contacto": " 987654321",*/
 
-    
+
+
 
 }];
 

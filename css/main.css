@@ -737,7 +737,7 @@ body {
   }
 }
 
-@media(max-width:530px) {
+@media(max-width:660px) {
   .login-wrapper {
     padding: 20px;
 
@@ -749,7 +749,7 @@ body {
 
   .bottom-register {
 
-    margin-top: 300px;
+    margin-top: 20px;
 
   }
 
@@ -759,6 +759,8 @@ body {
     right: 20px;
     width: 150px;
     height: auto;
+    visibility: hidden
+    ;
   }
 
 }
@@ -1077,65 +1079,10 @@ li {
   text-align: center;
 }
 
-.map-container {
-  position: relative;
-  width: 600px;
-  height: 400px;
-}
-
-.circle {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: red;
-  cursor: pointer;
-}
-
-.circle-info {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 200px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
-  display: none;
-}
-
-
-.hide {
-  background-color: #00d8ff;
-  border-radius: 5px;
-  text-align: center;
-  position: absolute;
-  margin: 0 auto;
-  padding: 10px 20px;
-  border: 1px solid black;
-  font-size: 12px;
-}
-
 .cls-1 {
   fill: #00d8ff;
   stroke: #000;
   stroke-width: 1px;
-}
-
-.kenya-txt {
-  top: 740%;
-  left: 47%;
-}
-
-.brazil-txt {
-  top: 748%;
-  left: 25%;
-}
-
-
-.portugal-txt {
-  top: 713%;
-  left: 34%;
 }
 
 .text-container {
@@ -1143,28 +1090,103 @@ li {
 }
 
 .contentor {
-  margin-top: 50px;
+  margin-top: 8px;
 }
 
-.container-parceiros {
-  margin-bottom: 8px;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-
-}
-
-.linha{
+.linha {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
 
+#tooltip {
+  text-align: center;
+  background: #00d8ff;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 
 /*Doações*/
+
+.postsDoacoes {
+  margin-bottom: 20px;
+}
+
+.containerDoacoes {
+  max-width: 600px;
+}
+
+.btn-cardDoacoes {
+  right: 3rem;
+  bottom: 1rem;
+  align-items: center;
+
+
+}
+
+.btn-locationDoacoes {
+  float: right;
+
+}
+
+.row-doacoes {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  padding: 20px;
+
+}
+
+.card-imagemDoacoes {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.card-bodyDoacoes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+
+
+}
+
+.card-titleDoacoes {
+  margin-left: 10px;
+}
+
+.card-descDoacoes {
+  font-family: Times, Times New Roman, serif;
+  margin-bottom: 20px;
+  margin-left: 10px;
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .card-descDoacoes {
+    font-size: smaller;
+  }
+
+  .btn-cardDoacoes {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  .card-descDoacoes {
+    display: none;
+  }
+
+  .btn-cardDoacoes {
+    float: right;
+  }
+}
+
 
 .linhaDoadores {
   text-align: center;
@@ -1173,7 +1195,6 @@ li {
   margin-top: 200px;
   margin-bottom: 100px;
 }
-
 
 
 .owl-carousel .itemDoador {
@@ -1199,19 +1220,6 @@ li {
   /* Garante que o elemento ocupe toda a altura disponível */
 }
 
-.card_row {
-  margin-bottom: 10px;
-  position: relative;
-  display: flex;
-  padding: 20px;
-
-}
-
-.card-imagem {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
 
 
 /*Detalhe*/
@@ -1293,10 +1301,12 @@ li {
 .image-zoom:hover img {
   transform: scale(1.2);
 }
+
 /*Detalhe*/
 
 .card2 {
-  border: none; /* Remover as bordas do cartão */
+  border: none;
+  /* Remover as bordas do cartão */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   padding: 40px;
 }
@@ -1376,11 +1386,11 @@ body {
 
 #edit-profile-form h1 {
   text-align: center;
-}  
+}
 
 #edit-profile-form {
   margin-top: 200px;
-}  
+}
 
 #edit-profile-form label {
   display: block;
@@ -1408,7 +1418,7 @@ body {
 }
 
 #edit-profile-form button[type="submit"]:hover {
-  background-color:#1E88E5;
+  background-color: #1E88E5;
 }
 
 #edit-profile-form .error {
@@ -1421,7 +1431,7 @@ body {
   margin-top: 5px;
 }
 
-#user-marcacao{
+#user-marcacao {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #f2f2f2;
@@ -1440,3 +1450,14 @@ body {
 #user-marcacao label {
   font-weight: bold;
 }
+
+#contact{
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+#contact1{
+  
+  margin-bottom: 100px;
+}
+

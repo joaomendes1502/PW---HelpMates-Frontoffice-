@@ -86,15 +86,15 @@
                     <div class="text-overlay">
                         <div class="text-center">Doações</div>
                     </div>
-                    <div class="text-center mt-3">
-                        <h5>AS NOSSAS CAMPANHAS</h5>
+                    <div class="text-center mt-5 mb-5">
+                        <h2><strong>AS NOSSAS CAMPANHAS</strong></h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="posts" id="posts">
+        <div class="postsDoacoes" id="postsDoacoes">
             <div class="row">
-                <div class="container">
+                <div class="containerDoacoes">
                     <div class="column" id="postcolumnDoaçoes"></div>
                 </div>
             </div>
@@ -119,23 +119,23 @@
         let z = 0;
 
         for (let i = 0; i < postsDoaçoes.length / 2; i++) {
-            let htmlDoaçoes = '<div class="row g-6 justify-content-evenly">';
+            let htmlDoaçoes = '<div class="row-doacoes row g-6 justify-content-evenly">';
             for (let j = z; j < z + 2 && j < postsDoaçoes.length; j++) {
                 let postDoaçoes = postsDoaçoes[j];
                 let postDoaçoes2 = postcolunaDoaçoes[j];
-                let htmlDoaçoes2 = '<div class="col-md-6">' +
+                let htmlDoaçoes2 = '<div id="' + postDoaçoes2.TipoDoaçoes + '"class="col-md-6 cartaodinamico">' +
                     '<div class="card">' +
                     '<div class="row g-0">' +
                     '<div class="col-12 col-md-5">' +
-                    '<img src="' + postDoaçoes.imagemDoaçoes + '" style="width:100%; height:200px" ' +
-                    'class="card-img img-fluid rounded-start" alt="Imagem Doações" />' +
+                    '<img src="' + postDoaçoes.imagemDoaçoes + '"class="card-imagemDoacoes"  ' +
+                    'class="card-img img-fluid rounded-start" alt="Imagem Doacoes" />' +
                     '</div>' +
                     '<div class="col-12 col-md-7">' +
-                    '<div class="card-body d-flex flex-column">' +
+                    '<div class="card-bodyDoacoes d-flex flex-column">' +
                     '<div class="h-100">' +
-                    '<h3 class="card-title">' + postDoaçoes2.TipoDoaçoes + '</h3>' +
-                    '<p class="card-desc">' + postDoaçoes2.DescricaoDoaçoes + '</p>' +
-                    '<p><a href="' + postDoaçoes2.refDoaçoes + '"> Doe Agora <ion-icon name="arrow-forward-outline"></ion-icon></a></p>' +
+                    '<h4 class="card-titleDoacoes">' + postDoaçoes2.TipoDoaçoes + '</h4>' +
+                    '<p class="card-descDoacoes">' + postDoaçoes2.DescricaoDoaçoes + '</p>' +
+                    '<p><a class="btn btn-primary btn-cardDoacoes btn-locationDoacoes">Doe Agora </a></p>' +
                     '</div>' +
                     '</div>' +
                     '</div>' +
@@ -160,13 +160,16 @@
 
     <!--DOADORES-->
 
-    <h1 class="linhaDoadores">OS NOSSOS ÚLTIMOS DOADORES</h1>
+    <h4 class="linhaDoadores mt-5"><strong>OS NOSSOS ÚLTIMOS DOADORES</strong></h4>
+
+
+
 
 
     <div class="container-fluid my-5">
 
-        <div class="row">
-            <div class="col-12 m-auto">
+        <div class="row justify-content-center">
+            <div class="col-12">
                 <div class="owl-carousel owl-theme">
                     <div class="itemDoador mb-4">
                         <div class="card border-0 shadow">
