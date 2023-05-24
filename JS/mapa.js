@@ -1,34 +1,12 @@
-$(document).ready(function() {
-    $(".circle").hover(function() {
-      $(".circle-info").fadeIn();
-    }, function() {
-      $(".circle-info").fadeOut();
-    });
-  });
-
-  $(document).ready(function(){
-    $(".hide").hide();
-    
-    
-    $(".marker-kenya").click(function(){
-      $(".hide").hide();
-      $(".kenya-txt").fadeIn(300);
-    });
-    
-      $(".marker-portugal").click(function(){
-         $(".hide").hide();
-      $(".portugal-txt").fadeIn(300);
-    });
-    
-      $(".marker-brazil").click(function(){
-         $(".hide").hide();
-      $(".brazil-txt").fadeIn(300);
-    });
+  function showTooltip(evt, text) {
+    let tooltip = document.getElementById("tooltip");
+    tooltip.innerHTML = text;
+    tooltip.style.display = "block";
+    tooltip.style.left = evt.pageX + 10 + 'px';
+    tooltip.style.top = evt.pageY + 10 + 'px';
+  }
   
-  });
-
-  $(document).ready(function() {
-    $("#portugal-point").click(function() {
-      $(".text-container").toggle();
-    });
-  });
+  function hideTooltip() {
+    var tooltip = document.getElementById("tooltip");
+    tooltip.style.display = "none";
+  }
