@@ -1,6 +1,5 @@
 {
-    "TipoDoaçoes": "Tipo Doações",
-    "DescricaoDoaçoes": "breve descricao",
-    "refDoaçoes": "referencia"
-  }
-  
+  "TipoDoacoes": "Tipo Doações",
+  "DescricaoDoacoes": "breve descricao",
+  "refDoacoes": "referencia"
+}
