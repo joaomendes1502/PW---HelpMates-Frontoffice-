@@ -1353,11 +1353,13 @@ body {
 /* PerfilUser */
 
 #user-data-container {
+  
+  margin-top: 20px;
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid black;
   border-radius: 20px;
-  box-sizing: border-box;
+  width:max-content;
 }
 
 #user-data-container h2 {
