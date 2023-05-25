@@ -54,7 +54,7 @@ if (TipoSelecionado) {
             
             if (Logado) {
                 
-                let marca = { "estado": "Pendente", "Organizacao": Op1[0].Organizacao, "Contacto": Op1[0].Contacto, "Data": Op1[0].Data, "Vagas": Op1[0].Vagas, "username": Logado.username }
+                let marca = { "estado": "Pendente", "Organizacao": Op1[0].Organizacao, "Contacto": Op1[0].Contacto, "Data": Op1[0].Data, "Vagas": Op1[0].Vagas, "username": Logado.username, "funcionario":"Por definir" }
                 const Data1 = JSON.parse(localStorage.getItem('marcacao')) || []; //Data1 o que vai buscar a marcaçoes
                 const Data2 = Data1.filter(post => post.username === Logado.username); //Data2 ir buscar o filtro
                 const EC = Data2.find(obj => obj.Contacto===marca.Contacto)

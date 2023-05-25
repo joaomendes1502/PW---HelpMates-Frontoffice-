@@ -37,12 +37,16 @@ if (marcaDataFiltrada.length > 0) {
     const dataElement = document.createElement('p');
     dataElement.textContent = 'Data: ' + marca.Data + '';
 
+    const funcionarioElement = document.createElement('p');
+    dataElement.textContent = 'funcionario: ' + marca.funcionario + '';
+
 
     // Adicionar os elementos à marcação
     marcaElement.appendChild(estadoElement);
     marcaElement.appendChild(organizacaoElement);
     marcaElement.appendChild(contatoElement);
     marcaElement.appendChild(dataElement);
+    marcaElement.appendChild(funcionarioElement);
 
 
     // Adicionar a marcação ao container
