@@ -1,4 +1,5 @@
-var userData = localStorage.getItem('UtilizadorLogado'); //obtem os dados do utilizador armazenados em localstorage
+var userData = localStorage.getItem('UtilizadorLogado');
+var storedUsersData = localStorage.getItem('utilizador'); //obtem os dados do utilizador armazenados em localstorage
 
 //UtilizadorLogado: Essa chave é usada para armazenar os dados do utilizador quando ele faz login ou está autenticado no sistema
 
@@ -41,6 +42,43 @@ if (userData) {
 
     // Redirecionar o usuário para a página de login ou para onde for apropriado
     window.location.href = 'HelpMates.html';
+  });
+
+  // Localizar o elemento do botão "Eliminar Conta" no seu HTML
+  var deleteAccountButton = document.getElementById('delete-account-button');
+
+  // Adicionar um ouvinte de evento para o botão "Eliminar Conta"
+  deleteAccountButton.addEventListener('click', function () {
+    // Exibir uma janela de confirmação
+    var confirmDelete = confirm('Tem certeza que deseja eliminar a sua conta?');
+
+    // Verificar se o usuário confirmou a exclusão
+    if (confirmDelete) {
+      // Obter os dados dos utilizadores do localStorage
+      var users = JSON.parse(storedUsersData);
+
+      // Encontrar o índice do usuário atualmente logado no array
+      var userIndex = users.findIndex(function (user) {
+        return user.username === userr.username; // Faça a correspondência com o critério adequado para identificar o usuário
+      });
+
+      // Remover o usuário do array
+      if (userIndex !== -1) {
+        users.splice(userIndex, 1);
+      }
+
+      // Atualizar os dados dos utilizadores no localStorage
+      localStorage.setItem('utilizador', JSON.stringify(users));
+
+      // Remover os dados do perfil do usuário logado
+      localStorage.removeItem('UtilizadorLogado');
+
+      // Redirecionar o usuário para a página de login ou para onde for apropriado
+      window.location.href = 'HelpMates.html';
+    } else {
+      // Fechar a janela de confirmação
+      // Nenhuma ação adicional é necessária neste caso
+    }
   });
 
 }
