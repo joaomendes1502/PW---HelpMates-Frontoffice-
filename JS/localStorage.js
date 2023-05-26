@@ -38,7 +38,7 @@ var postarcoluna = [{
 
 }];
 
-var imagemdetalhe = [{
+/*var imagemdetalhe = [{
     "imagem": "./images/animais.jpg",
     "Tipo": "Animais"
 }, {
@@ -96,7 +96,7 @@ var itensdetalhe = [{
     "Tipo": "Educação",
     "Contacto": " 987654377"
 
-}];
+}];*/
 
 /*DOAÇÕES*/
 var postarDoaçoes = [{
