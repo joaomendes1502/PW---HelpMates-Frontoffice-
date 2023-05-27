@@ -108,22 +108,24 @@
                     <h2>Contacte-nos</h2>
                     <p>Alguma dúvida ou feedback? Preencha o formulário abaixo para entrar em contato com a nossa equipa!</p>
                     <div class="contact-form mb-4">
-                        <form onsubmit="sendEmail(); reset(); return false;">
+                        <form
+                         action="https://formspree.io/f/xlekkoqk"
+                         method="POST">
                             <div class="form-group">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" id="name" placeholder="Escreva o seu nome" required>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Escreva o seu nome" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">E-mail</label>
-                                <input type="email" class="form-control" id="email" placeholder="Escreva o seu e-mail" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Escreva o seu e-mail" required>
                             </div>
                             <div class="form-group">
                                 <label for="tema">Tema</label>
-                                <input type="text" class="form-control" id="subject" placeholder="Escreva o tema da mensagem" required>
+                                <input type="text" class="form-control" id="tema" name="tema" placeholder="Escreva o tema da mensagem" required>
                             </div>
                             <div class="form-group">
                                 <label for="mensagem">Mensagem</label>
-                                <textarea class="form-control" id="message" rows="5"
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="5"
                                     placeholder="Escreva a sua mensagem" required></textarea>
                             </div>
                             <button type="submit" id="submit" class="btn btn-primary">Enviar</button>
@@ -190,19 +192,6 @@
         </div>
       </footer>
 
-    <script>
-        function sendEmail(){
-            Email.send({
-            SecureToken : "a49ea619-b6ca-427c-b857-ab003a063f73",
-            To : 'helpmatesguimaraes@gmail.com',
-            From : document.getElementById("email").value,
-            Subject : "This is the subject",
-            Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-        }
-    </script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
 <script src="JS\script.js"></script>
