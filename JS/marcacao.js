@@ -83,7 +83,7 @@ if (marcaDataFiltrada.length > 0) {
         estadoBotaoElement.classList.add('btn', 'btn-success');
         estadoBotaoElement.style.width = '100px'; // Ajustar o tamanho do botão para Aceite
         break;
-      case 'Rejeitada':
+      case 'Rejeitado':
         estadoBotaoElement.classList.add('btn', 'btn-danger');
         estadoBotaoElement.style.width = '100px'; // Ajustar o tamanho do botão para Rejeitada
         break;
