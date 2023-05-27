@@ -151,16 +151,35 @@ var postarDetalheDoacoes = [{
 
 }];
 
+/*Galeria*/
 
+var postarGaleria = [{
+    "imagemGaleria": "./images/galeria1.png"
+}, {
+    "imagemGaleria": "./images/galeria2.png"
+}, {
+    "imagemGaleria": "./images/galeria3.png"
+}, {
+    "imagemGaleria": "./images/galeria4.png"
+}, {
+    "imagemGaleria": "./images/galeria5.png"
+}, {
+    "imagemGaleria": "./images/galeria6.png"
+}, {
+    "imagemGaleria": "./images/galeria7.png"
+}, {
+    "imagemGaleria": "./images/galeria8.png"
+}, {
+    "imagemGaleria": "./images/galeria9.png"
+}];
 
-
-
+localStorage.setItem("Galeria", JSON.stringify(postarGaleria))
 
 localStorage.setItem("ImagensOportunidades", JSON.stringify(postar))
 
 localStorage.setItem("Oportunidades", JSON.stringify(postarcoluna))
 
-
+localStorage.setItem("Galeria", JSON.stringify(postarGaleria))
 
 localStorage.setItem("ImagensDoaçoes", JSON.stringify(postarDoaçoes))
 
