@@ -10,6 +10,9 @@ const containerDetalhesDoacoes = document.getElementById("postcolumnDetalhesDoac
 // Recupera as informações da última doação armazenada
 const ultimaDoacao = JSON.parse(localStorage.getItem('UltimaDoacao'));
 
+// Recupera a lista de doações do usuário do localStorage
+const listaDoacoes = JSON.parse(localStorage.getItem('listaDoacoes')) || [];
+
 if (TipoDoacaoSelecionado) {
     const imagensDetalhesDoacoes = postsDetalhesDoacoes.filter(postDetalhesDoacoes => postDetalhesDoacoes.TipoDoacoes === TipoDoacaoSelecionado);
     const textoDetalheDoacoes = postcolunaDetalhesDoacoes.filter(postDetalhesDoacoes => postDetalhesDoacoes.TipoDoacoes === TipoDoacaoSelecionado);
@@ -79,6 +82,12 @@ if (TipoDoacaoSelecionado) {
                         alert("O valor máximo de doação para esta categoria foi atingido.");
                         // Você pode adicionar código adicional aqui para lidar com a situação quando o valor máximo é atingido
                     } else {
+                        // Adiciona a doação à lista de doações do usuário
+                        listaDoacoes.push(doacao);
+
+                        // Armazena a lista de doações atualizada no localStorage
+                        localStorage.setItem('listaDoacoes', JSON.stringify(listaDoacoes));
+
                         // Exibe as informações da última doação no console
                         console.log('Última doação:');
                         console.log('Valor: ' + doacao.valor);
@@ -98,9 +107,6 @@ if (TipoDoacaoSelecionado) {
 
     const infoDoacao = document.getElementById("infoDoacao");
 
-    // Recupera as informações da última doação armazenada
-    const ultimaDoacao = JSON.parse(localStorage.getItem('UltimaDoacao'));
-
     if (ultimaDoacao) {
         infoDoacao.innerHTML = 'Última doação: <br>' +
             'Valor: ' + ultimaDoacao.valor + '<br>' +
@@ -108,3 +114,4 @@ if (TipoDoacaoSelecionado) {
             'Instituição: ' + ultimaDoacao.instituicao;
     }
 }
+
