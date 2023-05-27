@@ -875,34 +875,82 @@ li {
   }
 }
 
-/*.card-desc{
-  text-align: center; /* Centraliza horizontalmente o texto */
-/*align-items: center; /* Centraliza verticalmente o texto */
-/* max-height: 100px; */
+
 
 /* Sobre Nos */
 
-
-
-
-.equipe-fotos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.apresentacao-nos{
+  margin-top: 20px;
 }
 
-.linha1,
-.linha2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+.apresentacao-textinho{
+  margin-left: 20px;
+  margin-right:20px;
 }
 
-.membro-equipe {
-  margin: 10px;
+.lado-NOS{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+.container-sobrenos{
+  margin-top:50px;
+}
+
+.linhas{
+  margin-top: 150px;
+}
+
+.container-sobrenoscard{
+  max-width: 800px; /* Largura máxima do contêiner */
+  margin-left: auto; /* Margem esquerda automática para centralizar horizontalmente */
+  margin-right: auto; /* Margem direita automática para centralizar horizontalmente */
+  margin-top: 50px;
+  padding-left: 10px; /* Espaçamento interno à esquerda */
+  padding-right: 10px; /* Espaçamento interno à direita */
+}
+
+.card-largo {
+    flex: 1 0 0; /* Distribui o espaço igualmente entre os cartões */
+    max-width: 100%; /* Define a largura máxima para 33.33% para manter três cartões por linha */
+  }
+
+.card-largo .card-img {
+  width: 100%;
+  height: 200px; /* Altura fixa para as imagens */
+  object-fit: cover;
+}
+
+.card-TipoNos{
+  justify-content: flex-end;
   text-align: center;
+  color:#999
+}
+
+.cartaodinamicoNOS{
+  flex-basis: calc(33.33% - 20px); /* Largura de cada cartão */
+  margin-bottom: 20px; /* Espaço entre os cartões */
+}
+
+@media (max-width: 992px) {
+  .cartaodinamicoNOS {
+    flex-basis: calc(50% - 10px); /* Largura de cada cartão em telas menores */
+  }
+}
+
+@media (max-width: 576px) {
+  .cartaodinamicoNOS {
+    flex-basis: 100%; /* Largura total do cartão em telas ainda menores */
+  }
+} 
+
+
+@media (max-width: 576px) { /* Telas com largura máxima de 576px */
+  .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .foto-pequena {
@@ -1000,6 +1048,7 @@ li {
     font-size: 14vw;
     /* Ajuste o tamanho da fonte para telas menores */
   }
+
 }
 
 /*Projeto*/
@@ -1154,15 +1203,17 @@ li {
 
 .card-titleDoacoes {
   margin-left: 10px;
+  
 }
 
 .card-descDoacoes {
-  font-family: Times, Times New Roman, serif;
+
   margin-bottom: 20px;
   margin-left: 10px;
 
 
 }
+
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
   .card-descDoacoes {
@@ -1183,40 +1234,6 @@ li {
     float: right;
   }
 }
-
-
-.linhaDoadores {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 200px;
-  margin-bottom: 100px;
-}
-
-
-.owl-carousel .itemDoador {
-  width: 300px;
-  /* Defina a largura desejada para os itens do carrossel */
-}
-
-.card-titleDoadores {
-  text-align: center;
-  /* Centraliza horizontalmente o texto */
-  align-items: center;
-  /* Centraliza verticalmente o texto */
-  height: 100%;
-  /* Garante que o elemento ocupe toda a altura disponível */
-}
-
-.card-textDoadores {
-  text-align: center;
-  /* Centraliza horizontalmente o texto */
-  align-items: center;
-  /* Centraliza verticalmente o texto */
-  height: 100%;
-  /* Garante que o elemento ocupe toda a altura disponível */
-}
-
 
 
 /*Detalhe*/
@@ -1468,3 +1485,123 @@ body {
   margin-bottom: 100px;
 }
 
+
+/*Detalhe Doadores */
+.postcolumnDetalhesDoacoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cartao1 {
+  width: fit-content;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.cartaodinamico {
+  max-width: 100%;
+}
+
+.card2DetalhesDoacoes {
+  max-width: 100%;
+}
+
+#tituloDetalheDoacoes {
+  margin-top: -55px;
+}
+
+#tipo {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #999;
+}
+
+
+#descDetalheDoacoes {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+#Instituicao,
+#multibanco,
+#ContactoInstituicao {
+  margin-bottom: 10px;
+}
+
+#valorDoacoes {
+  margin-top: 50px;
+}
+
+#progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: grey;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#progress-bar {
+  height: 100%;
+  text-align: center;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  background-image: repeating-linear-gradient(to left, #0546e0, #1172f9, #4892f9);
+  box-shadow: 0 5px 5px -6px #0546e0, 0 3px 7px #1172f9;
+  border-radius: 20px;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  transition: 1s ease 0.3s;
+}
+
+/* Estilos para dispositivos com largura máxima de 600px */
+@media screen and (max-width: 600px) {
+  .cartao1 {
+    margin-top: 30px;
+  }
+  
+  #tituloDetalheDoacoes {
+    top: 0;
+  }
+  
+  #descDetalheDoacoes {
+    display: none;
+  }
+  
+  #valorDoacoes {
+    margin-top: 30px;
+  }
+}
+
+/* Estilos para dispositivos com largura máxima de 1200px */
+@media screen and (max-width: 1200px) {
+  .cartao1 {
+    max-width: 800px;
+  }
+  
+  #Instituicao,
+  #multibanco,
+  #ContactoInstituicao {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  #progress-bar-container {
+    margin-top: 30px;
+  }
+}
+
+/* Estilos para dispositivos com largura máxima de 1600px */
+@media screen and (max-width: 1600px) {
+  .cartao1 {
+    max-width: 1200px;
+  }
+}
