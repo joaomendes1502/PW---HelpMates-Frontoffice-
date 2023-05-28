@@ -47,7 +47,7 @@ function registar(){
     utilizador.push(novo); 
     localStorage.setItem("utilizador", JSON.stringify(utilizador));
     alert('A sua conta foi criada');
-    window.location.href = "login.html";
+    window.location.href = "Login.html";
 }
 
 
