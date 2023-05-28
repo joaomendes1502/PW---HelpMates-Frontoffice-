@@ -15,6 +15,8 @@ const ultimaDoacao = JSON.parse(localStorage.getItem('UltimaDoacao'));
 // Obtém o valor total de doações armazenado no localStorage para o tipo selecionado
 let totalDinheiroDoado = parseFloat(localStorage.getItem(`TotalDinheiroDoado_${TipoDoacaoSelecionado}`)) || 0;
 
+let todasDoacoes = JSON.parse(localStorage.getItem('TodasDoacoes')) || [];
+
 // Obtém o valor máximo para o tipo de doação selecionado
 const valorMaximo = postcolunaDetalhesDoacoes.find(post => post.TipoDoacoes === TipoDoacaoSelecionado).valorMaximo;
 
@@ -105,6 +107,7 @@ if (TipoDoacaoSelecionado) {
             if (Logado) {
                 const valorDoacaoInput = document.getElementById('valorDoacao' + index);
                 const valorDoacao = valorDoacaoInput.value.trim();
+                
 
                 if (valorDoacao === "" || Number(valorDoacao) <= 0) {
                     alert("Por favor, insira um valor de doação válido.");
@@ -112,9 +115,15 @@ if (TipoDoacaoSelecionado) {
                     // Armazena as informações da doação no localStorage
                     const doacao = {
                         valor: valorDoacao,
-                        utilizador: Logado.nome,
+                        username: Logado.username,
                         instituicao: textoDetalheDoacoes[index].Instituicao
                     };
+
+                    // Adiciona a nova doação ao array de todas as doações
+                    todasDoacoes.push(doacao);
+
+                    // Salva o array atualizado no localStorage
+                    localStorage.setItem('TodasDoacoes', JSON.stringify(todasDoacoes));
                     localStorage.setItem('UltimaDoacao', JSON.stringify(doacao));
 
                     // Adiciona o valor doado ao total específico para o tipo selecionado

@@ -1,7 +1,7 @@
 const tabelaDoacoes = document.getElementById('tabela-doacoes');
 
 // Obter os dados das doações do localStorage
-const listaDoacoes = JSON.parse(localStorage.getItem('listaDoacoes')) || [];
+const listaDoacoes = JSON.parse(localStorage.getItem('TodasDoacoes')) || [];
 
 // Obter o UtilizadorLogado do localStorage
 const utilizadorLog = JSON.parse(localStorage.getItem('UtilizadorLogado')) || {};
