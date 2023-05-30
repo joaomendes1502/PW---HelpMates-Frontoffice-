@@ -259,18 +259,6 @@ var itensdetalhe = [{
 },{
 
 
-   
-    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
-    "Organizacao": "Animal Crossing",
-    "Data": " 24-11-2002",
-    "Local": " Viana do Castelo",
-    "VagasDisponiveis": " 25",
-    "Tipo": "Animais",
-    "Contacto": " 987654320"
-
-},{
-
-
     "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
     "Organizacao": "Animal Crossing",
     "Data": " 24-11-2002",
