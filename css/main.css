@@ -1404,6 +1404,14 @@ li {
   text-align: justify;
 }
 
+.gtranslate_wrapper {
+  transform: scale(0.5);
+        position: fixed;
+        bottom: 20px; /* Adjust the vertical position as needed */
+        left: 20px; /* Adjust the horizontal position as needed */
+        z-index: 9999; /* Adjust the z-index as needed */
+}
+
 /*Galeria*/
 
 .titulo-galeria {

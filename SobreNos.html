@@ -94,7 +94,7 @@
                         <h4>Gonçalo Rodrigues</h4>
                         <p>Coordenador de Recrutamento</p>
                     </div>
-                    <div  class="col-3 mb-4">
+                    <div class="col-3 mb-4">
                         <img class="redondas" src="images/jucouto.png" alt="Nome do Membro 3">
                         <h4>Joana Couto</h4>
                         <p>Coordenador de Comunicação</p>
@@ -130,12 +130,16 @@
         <img class="foto-lado lado-NOS" src="./images/imagemMissao.jpg">
 
         <p class="titulo-apresentação">A nossa Missão</p>
-        <p class="apresentação apresentacao-textinho">Acreditamos que ajudar os outros é uma das coisas mais importantes que podemos fazer nas
-            nossas vidas. Não importa qual seja a tua situação financeira ou social, há sempre algo que tu podes fazer para
+        <p class="apresentação apresentacao-textinho">Acreditamos que ajudar os outros é uma das coisas mais importantes
+            que podemos fazer nas
+            nossas vidas. Não importa qual seja a tua situação financeira ou social, há sempre algo que tu podes fazer
+            para
             ajudar quem mais precisa.
         <p class="apresentação apresentacao-textinho">
-            Ao longo dos anos, a Helpmates tem trabalhado incansavelmente para ajudar aqueles que têm mais necessidade.</p>
-        <p class="apresentação apresentacao-textinho"> Desde a nossa criação, já ajudamos mais de 3000 pessoas e continuamos a trabalhar para
+            Ao longo dos anos, a Helpmates tem trabalhado incansavelmente para ajudar aqueles que têm mais necessidade.
+        </p>
+        <p class="apresentação apresentacao-textinho"> Desde a nossa criação, já ajudamos mais de 3000 pessoas e
+            continuamos a trabalhar para
             melhorar ainda mais a vida daqueles que precisam.</p>
         </p>
     </section>
@@ -146,12 +150,12 @@
         <div id="sizes" class="row">
             <div class="container-sobrenoscard">
                 <div class="columnNos" id="sobreNOS"></div>
-                </div>
+            </div>
         </div>
     </div>
     </div>
 
-<!-- Footer -->
+    <!-- Footer -->
 
     <!--FOOTER-->
 
@@ -191,7 +195,7 @@
                 <ul class="box">
                     <li><i class="bi bi-geo-alt"></i> Azurém, Guimarães</li>
                     <li><i class="bi bi-telephone"></i> 987654321</li>
-                    <li><i class="bi bi-envelope-at"></i> contacto@helpmates.com</li>
+                    <li><i class="bi bi-envelope-at"></i> helpmatesguimaraes@gmail.com</li>
                 </ul>
             </li>
         </ul>
@@ -218,46 +222,46 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-let postsNOS= JSON.parse(localStorage.getItem("ImagensSobreNos"))
-let colunaNOS= JSON.parse(localStorage.getItem("SobreNos"))
-let sobrenosHTML = '';
-let colunasobrenosHTML = '';
-let z = 0;
+        let postsNOS = JSON.parse(localStorage.getItem("ImagensSobreNos"))
+        let colunaNOS = JSON.parse(localStorage.getItem("SobreNos"))
+        let sobrenosHTML = '';
+        let colunasobrenosHTML = '';
+        let z = 0;
 
-for (let i = 0; i < Math.ceil(postsNOS.length /3); i++) {
-    let htmlNOS = '<div class="card_rowNOS row g-6 justify-content-evenly">'; // fila
-    for (let j = z; j < z + 3 && j < postsNOS.length; j++) {
-        let postNOS = postsNOS[j];
-        let postNOS2 = colunaNOS[j];
-        let html2NOS = '<div id="' + postNOS2.Tipo + '"class="col-6 cartaodinamicoNOS">' +
-            '<div class="card card-largo">' +
-            '<div class="row g-0">' +
-            '<div class="col-12">' +
-            '<img src="' + postNOS.imagemNOS + '"class="card-imagem card-img" alt="imagem"  ' +
-            'class="card-img" alt="imagem" />' +
-            '</div>' +
-            '<div class="col-12">' +
-            '<div class="card-body d-flex flex-column">' +
-            '<div class="h-100">' +
-            '<h3 class="card-title">' + postNOS2.Nome + '</h3>' +
-            '<p class="card-descricaoNOS">' + postNOS2.Descricao + '</p>' +
-            '<p><a href="Galeria.html"> '+ postNOS2.Galeria +' </a></p>' +
-            '<p class="card-TipoNos">' + postNOS2.Tipo + '</p>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '</div>';
-        htmlNOS += html2NOS;
-    }
-    htmlNOS += '</div>'; // a string html está a ser fechada com o elemento </div  '">Inscrever-se <ion-icon name="arrow-forward-outline"></ion-icon></a></p>' +
-    sobrenosHTML += htmlNOS;
-    z += 3;
-}
+        for (let i = 0; i < Math.ceil(postsNOS.length / 3); i++) {
+            let htmlNOS = '<div class="card_rowNOS row g-6 justify-content-evenly">'; // fila
+            for (let j = z; j < z + 3 && j < postsNOS.length; j++) {
+                let postNOS = postsNOS[j];
+                let postNOS2 = colunaNOS[j];
+                let html2NOS = '<div id="' + postNOS2.Tipo + '"class="col-6 cartaodinamicoNOS">' +
+                    '<div class="card card-largo">' +
+                    '<div class="row g-0">' +
+                    '<div class="col-12">' +
+                    '<img src="' + postNOS.imagemNOS + '"class="card-imagem card-img" alt="imagem"  ' +
+                    'class="card-img" alt="imagem" />' +
+                    '</div>' +
+                    '<div class="col-12">' +
+                    '<div class="card-body d-flex flex-column">' +
+                    '<div class="h-100">' +
+                    '<h3 class="card-title">' + postNOS2.Nome + '</h3>' +
+                    '<p class="card-descricaoNOS">' + postNOS2.Descricao + '</p>' +
+                    '<p><a href="Galeria.html"> ' + postNOS2.Galeria + ' </a></p>' +
+                    '<p class="card-TipoNos">' + postNOS2.Tipo + '</p>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+                htmlNOS += html2NOS;
+            }
+            htmlNOS += '</div>'; // a string html está a ser fechada com o elemento </div  '">Inscrever-se <ion-icon name="arrow-forward-outline"></ion-icon></a></p>' +
+            sobrenosHTML += htmlNOS;
+            z += 3;
+        }
 
-document.getElementById("sobreNOS").innerHTML = sobrenosHTML;
-</script>
+        document.getElementById("sobreNOS").innerHTML = sobrenosHTML;
+    </script>
 
     <script src="JS/navbar.js"></script>
     <script src="JS\localStorage.js"></script>
