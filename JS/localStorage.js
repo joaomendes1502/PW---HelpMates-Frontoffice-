@@ -259,11 +259,11 @@ var itensdetalhe = [{
 },{
 
 
-    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
-    "Organizacao": "Animal Crossing",
+    "Descricaoo": "Durante esta campanha, terás a oportunidade de participar em várias atividades enriquecedoras. Poderás auxiliar no transporte dos animais para as clínicas veterinárias, ajudar nos cuidados pós-operatórios e participar em eventos e campanhas de angariação de donativos. Também poderás realizar voluntariado à distância, gerir as redes sociais, desenvolver campanhas e eventos, entrar em contato com parceiros e organizações. Junta-te a nós e faz a diferença na vida dos animais necessitados.",
+    "Organizacao": "Animais de Rua",
     "Data": " 24-11-2002",
-    "Local": " Viana do Castelo",
-    "VagasDisponiveis": " 25",
+    "Local": "Vila Nova de Gaia",
+    "VagasDisponiveis": "30",
     "Tipo": "Animais",
     "Contacto": " 987654320"
 
