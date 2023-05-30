@@ -111,7 +111,7 @@ var postarDetalheDoacoes = [{
     "ContactoInstituicao": "939840430",
     "ReferenciaMultibanco": "12345678",
     "DescricaoDoacoes": "Garantir o acesso a medicamentos para todas as crianças é um objetivo essencial para promover sua saúde e bem-estar. Crianças são vulneráveis a uma série de doenças e condições de saúde, e é nosso dever assegurar que elas recebam os medicamentos necessários para o tratamento adequado.",
-    
+
 
 }, {
     "titulo": "Garantir casas seguras",
@@ -120,7 +120,7 @@ var postarDetalheDoacoes = [{
     "ContactoInstituicao": "939840430",
     "ReferenciaMultibanco": "12345678",
     "DescricaoDoacoes": "Garantir casas seguras para as crianças é uma prioridade essencial para proteger o seu bem-estar e desenvolvimento saudável. Cada criança merece um lar seguro, livre de riscos e ameaças à sua segurança física e emocional. Isso implica construir e manter casas adequadas, livres de perigos como instalações elétricas precárias, janelas desprotegidas e outros potenciais pontos de acidentes.",
-   
+
 }, {
     "titulo": "Garantir assistência aos animais",
     "TipoDoacoes": "Cuidar Animais",
@@ -128,7 +128,7 @@ var postarDetalheDoacoes = [{
     "ContactoInstituicao": "939840430",
     "ReferenciaMultibanco": "12345678",
     "DescricaoDoacoes": "Garantir assistência adequada aos animais é um compromisso essencial para promover o seu bem-estar e respeitar a sua dignidade enquanto seres vivos. Isso inclui fornecer cuidados veterinários regulares, alimentação adequada, um abrigo seguro e oportunidades de exercício e interação social.",
-  
+
 }, {
     "titulo": "Assegurar roupas para todas as crianças",
     "TipoDoacoes": "Roupas",
@@ -136,7 +136,7 @@ var postarDetalheDoacoes = [{
     "ContactoInstituicao": "939840430",
     "ReferenciaMultibanco": "12345678",
     "DescricaoDoacoes": "Assegurar roupas para todas as crianças é uma responsabilidade social crucial para promover a dignidade e o bem-estar de cada criança. Cada criança merece ter acesso a roupas adequadas para se proteger do frio e do calor, além de promover a sua autoestima e integração social. Isso requer um esforço coletivo para fornecer roupas de qualidade, confortáveis e adequadas ao clima, considerando as necessidades de cada criança.",
-   
+
 }, {
     "titulo": "Oferecer aulas de reforço escolar",
     "TipoDoacoes": "Ensinar",
@@ -144,7 +144,7 @@ var postarDetalheDoacoes = [{
     "ContactoInstituicao": "939840430",
     "ReferenciaMultibanco": "12345678",
     "DescricaoDoacoes": "Oferecer aulas de reforço escolar é uma medida valiosa para promover a igualdade de oportunidades educacionais e apoiar o sucesso académico de todas as crianças. Nem todas as crianças têm o mesmo acesso a recursos educacionais. Ao disponibilizar aulas de reforço, podemos ajudar essas crianças a superar dificuldades, preencher lacunas de conhecimento e fortalecer as suas habilidades académicas.",
-    
+
 }, {
     "titulo": "Doação de ração para animais",
     "TipoDoacoes": "Comida Animais",
@@ -152,7 +152,7 @@ var postarDetalheDoacoes = [{
     "ContactoInstituicao": "939840430",
     "ReferenciaMultibanco": "12345678",
     "DescricaoDoacoes": "A doação de ração para animais é uma atitude solidária que visa acabar com as necessidades nutricionais dos animais em situação de vulnerabilidade. Muitos animais de estimação ou em abrigos dependem exclusivamente de doações para receberem alimentação adequada.",
-    
+
 
 }];
 
@@ -183,7 +183,7 @@ var postarGaleria = [{
 var imagensSobreNos = [{
     "imagemNOS": "./images/HOMEM.jpeg",
 },
- {
+{
     "imagemNOS": "./images/mulher1.jpg",
 }, {
     "imagemNOS": "./images/mulher2.jpg",
@@ -202,7 +202,7 @@ var postarSobreNos = [{
     "Tipo": "Voluntário",
 
 },
- {
+{
     "Nome": "Sónia Santos",
     "Descricao": "Senti-me bem em ajudar e ensinar a desenvolver a comunidade.",
     "Galeria": "Galeria",
@@ -217,7 +217,7 @@ var postarSobreNos = [{
 }, {
     "Nome": "Anónimo",
     "Descricao": "Graças à HelpMates consegui ter um Natal feliz pela primeira vez."
-    }, {
+}, {
     "Nome": "Anónimo",
     "Descricao": "A HelpMates permitiu que vários animais pudessem voltar a ter uma casa.",
     "Galeria": "Galeria",
@@ -229,6 +229,69 @@ var postarSobreNos = [{
     "Galeria": "Galeria",
     "Tipo": "Beneficiária"
 }];
+
+/*DETALHE OPORTUNIDAS*/
+var imagemdetalhe = [{
+    "imagem": "./images/animais.jpg",
+    "Tipo": "Animais"
+},{
+    "imagem": "./images/educacao.jpeg",
+    "Tipo": "Educação"
+},{
+    "imagem": "./images/animais.jpg",
+    "Tipo": "Animais"
+},{
+    "imagem": "./images/educacao.jpeg",
+    "Tipo": "Educação"
+}];
+
+var itensdetalhe = [{
+
+
+    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
+    "Organizacao": "Animal Crossing",
+    "Data": " 24-11-2002",
+    "Local": " Viana do Castelo",
+    "VagasDisponiveis": " 25",
+    "Tipo": "Animais",
+    "Contacto": " 987654321"
+
+},{
+
+
+   
+    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
+    "Organizacao": "Animal Crossing",
+    "Data": " 24-11-2002",
+    "Local": " Viana do Castelo",
+    "VagasDisponiveis": " 25",
+    "Tipo": "Animais",
+    "Contacto": " 987654320"
+
+},{
+
+
+    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
+    "Organizacao": "Animal Crossing",
+    "Data": " 24-11-2002",
+    "Local": " Viana do Castelo",
+    "VagasDisponiveis": " 25",
+    "Tipo": "Animais",
+    "Contacto": " 987654320"
+
+},{
+
+
+    "Descricaoo": "O voluntariado na área da educação é uma forma poderosa de contribuir para a sociedade, promovendo o desenvolvimento intelectual e o acesso à educação de qualidade para todos. Ao envolver-se neste tipo de trabalho voluntário, tens a oportunidade de fazer a diferença na vida de crianças, jovens e adultos, ajudando-os a alcançar o seu potencial e transformando comunidades inteiras.",
+    "Organizacao": "Educational",
+    "Data": " 23-04-2003",
+    "Local": " Lisboa",
+    "VagasDisponiveis": " 20",
+    "Tipo": "Educação",
+    "Contacto": " 987654377"
+
+}];
+
 
 localStorage.setItem("ImagensSobreNos", JSON.stringify(imagensSobreNos))
 
@@ -249,5 +312,9 @@ localStorage.setItem("Doaçoes", JSON.stringify(postarcolunaDoaçoes))
 localStorage.setItem("ImagensDetalhesDoacoes", JSON.stringify(imagensDetalheDoacoes))
 
 localStorage.setItem("DetalhesDoacoes", JSON.stringify(postarDetalheDoacoes))
+
+localStorage.setItem("ImagemDetalhe", JSON.stringify(imagemdetalhe))
+
+localStorage.setItem("ItensDetalhe", JSON.stringify(itensdetalhe))
 
 

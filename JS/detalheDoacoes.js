@@ -6,6 +6,7 @@ let colunaHTMLDetalhesDoacoes = '';
 
 const TipoDoacaoSelecionado = JSON.parse(localStorage.getItem("TipoEscolhido1"));
 const containerDetalhesDoacoes = document.getElementById("postcolumnDetalhesDoacoes");
+const container = document.getElementById("postcolumnDetalhesDoacoes")
 
 
 
@@ -107,11 +108,15 @@ if (TipoDoacaoSelecionado) {
             if (Logado) {
                 const valorDoacaoInput = document.getElementById('valorDoacao' + index);
                 const valorDoacao = valorDoacaoInput.value.trim();
-                
+
 
                 if (valorDoacao === "" || Number(valorDoacao) <= 0) {
                     alert("Por favor, insira um valor de doação válido.");
-                } else {
+                } else if (Number(valorDoacao) > valorMaximo) {
+                    alert("O valor máximo de doação para esta categoria foi atingido.");
+                } else if (Number(valorDoacao) + totalDinheiroDoado > valorMaximo) {
+                    alert("O valor máximo de doação para esta categoria foi atingido.");
+                }else {
                     // Armazena as informações da doação no localStorage
                     const doacao = {
                         valor: valorDoacao,

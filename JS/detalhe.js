@@ -6,6 +6,7 @@ let z = 0;
 
 const TipoSelecionado = JSON.parse(localStorage.getItem("TipoEscolhido"))
 const container = document.getElementById("postcolumn")
+container.classList.add("coluna");
 
 if (TipoSelecionado) {
     const imagens = posts.filter(post => post.Tipo === TipoSelecionado)
@@ -13,9 +14,9 @@ if (TipoSelecionado) {
 
     for (let i = 0; i < texto.length; i++) {
         const postElement = document.createElement('div');
-        postElement.classList.add("cartao1");
-        postElement.innerHTML = '<div id="' + texto[i].Organizacao + '" class="cartaodinamico">' +
-            '<div id = "c" class="card2">' +
+        postElement.classList.add("cartao1Detalhe");
+        postElement.innerHTML = '<div id="' + texto[i].Organizacao + '" class="cartaodinamicoDetalhe">' +
+            '<div id = "c" class="card2DetalheOpo">' +
             '<div class="row g-0">' +
             '<div class="col-8 col-md-5">' +
             '<img src="' + imagens[i].imagem + '" style="width:auto; height:auto; padding-right:20px" ' +
@@ -24,13 +25,13 @@ if (TipoSelecionado) {
             '<div class="col-4 col-md-7">' +
             '<div id="body-detalhe" class="card-body d-flex flex-column">' +
             '<div class="h-100">' +
-            '<h3 id="Organizacao" class="card-title">' + texto[i].Organizacao + '</h3>' +
-            '<p id="desc" class="card-desc">' + texto[i].Descricaoo + '</p>' +
-            '<p id="Data" class="card-desc">' + '<i class= "bi bi-calendar-date icon-orange">' + '</i>' + texto[i].Data + '</p>' +
-            '<p class="card-desc">' + '<i class="bi bi-map icon-orange">' + '</i>' + texto[i].Local + '</p>' +
-            '<p id="Vagas" class="card-desc">' + '<i class="bi bi-people-fill icon-orange">' + '</i>' + texto[i].VagasDisponiveis + '</p>' +
-            '<p id="Contacto" class="card-desc">' + '<i class="bi bi bi-telephone icon-orange">' + '</i>' + texto[i].Contacto + '</p>' +
-            '<p >' + '<a id="' + texto[i].Contacto + '" class="btn btn-primary marcar">Inscrever-se </a></p>' +
+            '<h3 id="OrganizacaoDetalheOpo" class="card-title">' + texto[i].Organizacao + '</h3>' +
+            '<p id="descDetalheOpo" class="card-desc">' + texto[i].Descricaoo + '</p>' +
+            '<p id="DataOpo" class="card-desc">' + '<i class= "bi bi-calendar-date icon-orange">' + '</i>' + texto[i].Data + '</p>' +
+            '<p  id="LocalOpo" class="card-desc">' + '<i class="bi bi-map icon-orange">' + '</i>' + texto[i].Local + '</p>' +
+            '<p id="VagasOpo" class="card-desc">' + '<i class="bi bi-people-fill icon-orange">' + '</i>' + texto[i].VagasDisponiveis + '</p>' +
+            '<p id="ContactoOpo" class="card-desc">' + '<i class="bi bi bi-telephone icon-orange">' + '</i>' + texto[i].Contacto + '</p>' +
+            '<p >' + '<a id="' + texto[i].Contacto + '" class="btn btn-primary marcar botao-detalhe">Inscrever-se </a></p>' +
             '</div>' +
             '</div>' +
             '</div>' +
@@ -38,12 +39,13 @@ if (TipoSelecionado) {
             '</div>' +
             '</div>';
         container.appendChild(postElement);
+        
 
 
 
     };
 
-    const botoes = document.querySelectorAll(".cartaodinamico");
+    const botoes = document.querySelectorAll(".cartaodinamicoDetalhe");
     console.log(botoes);
     botoes.forEach((botao) => {
         const idcartao = botao.querySelector(".marcar");

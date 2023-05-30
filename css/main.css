@@ -21,8 +21,8 @@
 
 .nav-link {
   transition: 0.5s ease;
-  
-  
+
+
 }
 
 .nav-link:hover:hover {
@@ -756,8 +756,7 @@ body {
     right: 20px;
     width: 150px;
     height: auto;
-    visibility: hidden
-    ;
+    visibility: hidden;
   }
 
 }
@@ -802,7 +801,7 @@ li {
 
 }
 
-.custom-heading{
+.custom-heading {
   margin-bottom: -200px;
 }
 
@@ -843,16 +842,16 @@ li {
   flex-wrap: wrap;
 }
 
-#peace{
+#peace {
   margin-top: 50px;
 }
 
-#projetos{
+#projetos {
   margin-top: 100px;
   font-size: 60px;
 }
 
-#sizes{
+#sizes {
   margin-top: -100px;
 }
 
@@ -880,74 +879,88 @@ li {
 
 /* Sobre Nos */
 
-.apresentacao-nos{
+.apresentacao-nos {
   margin-top: 20px;
 }
 
-.apresentacao-textinho{
+.apresentacao-textinho {
   margin-left: 20px;
-  margin-right:20px;
+  margin-right: 20px;
 }
 
-.lado-NOS{
+.lado-NOS {
   margin-top: 20px;
   margin-left: 20px;
-  margin-right:20px;
+  margin-right: 20px;
 }
 
-.container-sobrenos{
-  margin-top:50px;
+.container-sobrenos {
+  margin-top: 50px;
 }
 
-.linhas{
+.linhas {
   margin-top: 150px;
 }
 
-.container-sobrenoscard{
-  max-width: 800px; /* Largura máxima do contêiner */
-  margin-left: auto; /* Margem esquerda automática para centralizar horizontalmente */
-  margin-right: auto; /* Margem direita automática para centralizar horizontalmente */
+.container-sobrenoscard {
+  max-width: 800px;
+  /* Largura máxima do contêiner */
+  margin-left: auto;
+  /* Margem esquerda automática para centralizar horizontalmente */
+  margin-right: auto;
+  /* Margem direita automática para centralizar horizontalmente */
   margin-top: 50px;
-  padding-left: 10px; /* Espaçamento interno à esquerda */
-  padding-right: 10px; /* Espaçamento interno à direita */
+  padding-left: 10px;
+  /* Espaçamento interno à esquerda */
+  padding-right: 10px;
+  /* Espaçamento interno à direita */
 }
 
 .card-largo {
-    flex: 1 0 0; /* Distribui o espaço igualmente entre os cartões */
-    max-width: 100%; /* Define a largura máxima para 33.33% para manter três cartões por linha */
-  }
+  flex: 1 0 0;
+  /* Distribui o espaço igualmente entre os cartões */
+  max-width: 100%;
+  /* Define a largura máxima para 33.33% para manter três cartões por linha */
+}
 
 .card-largo .card-img {
   width: 100%;
-  height: 200px; /* Altura fixa para as imagens */
+  height: 200px;
+  /* Altura fixa para as imagens */
   object-fit: cover;
 }
 
-.card-TipoNos{
+.card-TipoNos {
   justify-content: flex-end;
   text-align: center;
-  color:#999
+  color: #999
 }
 
-.cartaodinamicoNOS{
-  flex-basis: calc(33.33% - 20px); /* Largura de cada cartão */
-  margin-bottom: 20px; /* Espaço entre os cartões */
+.cartaodinamicoNOS {
+  flex-basis: calc(33.33% - 20px);
+  /* Largura de cada cartão */
+  margin-bottom: 20px;
+  /* Espaço entre os cartões */
 }
 
 @media (max-width: 992px) {
   .cartaodinamicoNOS {
-    flex-basis: calc(50% - 10px); /* Largura de cada cartão em telas menores */
+    flex-basis: calc(50% - 10px);
+    /* Largura de cada cartão em telas menores */
   }
 }
 
 @media (max-width: 576px) {
   .cartaodinamicoNOS {
-    flex-basis: 100%; /* Largura total do cartão em telas ainda menores */
+    flex-basis: 100%;
+    /* Largura total do cartão em telas ainda menores */
   }
-} 
+}
 
 
-@media (max-width: 576px) { /* Telas com largura máxima de 576px */
+@media (max-width: 576px) {
+
+  /* Telas com largura máxima de 576px */
   .col-3 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1204,7 +1217,7 @@ li {
 
 .card-titleDoacoes {
   margin-left: 10px;
-  
+
 }
 
 .card-descDoacoes {
@@ -1247,18 +1260,114 @@ li {
   text-decoration: none;
   padding: 10px 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-
 }
 
-@media (max-width: 770px) {
-  #desc {
+.postcolumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cartao1Detalhe {
+  width: fit-content;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -60px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.cartaodinamicoDetalhe {
+  width: 100%;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.cartaodinamicoDetalhe {
+  max-width: 100%;
+}
+
+.card2DetalheOpo {
+  max-width: 100%;
+}
+
+#OrganizacaoDetalheOpo {
+  margin-top: -55px;
+}
+
+#descDetalheOpo {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+#DataOpo,
+#LocalOpo,
+#VagasOpo,
+#ContactoOpo {
+  margin-bottom: 15px;
+}
+
+.botao-detalhe {
+  float: right;
+  margin-top: -10px;
+}
+
+/* Estilos para dispositivos com largura máxima de 600px */
+@media screen and (max-width: 600px) {
+  .cartao1Detalhe {
+    margin-top: 30px;
+  }
+
+  #OrganizacaoDetalheOpo {
+    top: 0;
+  }
+
+  #descDetalheOpo {
     display: none;
   }
 
-  .btn-detalhe {
-    float: right;
+  .botao-detalhe {
+    float: none;
+    margin-top: 15px;
+    text-align: center;
   }
 }
+
+/* Estilos para dispositivos com largura máxima de 1200px */
+@media screen and (max-width: 1200px) {
+  .cartao1Detalhe {
+    max-width: 800px;
+  }
+
+  #DataOpo,
+  #LocalOpo,
+  #VagasOpo,
+  #ContactoOpo {
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+/* Estilos para dispositivos com largura máxima de 1600px */
+@media screen and (max-width: 1600px) {
+  .cartao1Detalhe {
+    max-width: 1200px;
+  }
+}
+
+#Log {
+  cursor: pointer;
+}
+
 
 
 /*Contactos*/
@@ -1342,7 +1451,7 @@ li {
     flex-direction: column;
   }
 
-  
+
 }
 
 .contact-item {
@@ -1474,13 +1583,13 @@ body {
   font-weight: bold;
 }
 
-#contact{
+#contact {
   margin-top: 100px;
   margin-bottom: 70px;
 }
 
-#contact1{
-  
+#contact1 {
+
   margin-bottom: 100px;
 }
 
@@ -1500,7 +1609,7 @@ body {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  
+
 }
 
 .cartaodinamico {
@@ -1566,15 +1675,15 @@ body {
   .cartao1 {
     margin-top: 30px;
   }
-  
+
   #tituloDetalheDoacoes {
     top: 0;
   }
-  
+
   #descDetalheDoacoes {
     display: none;
   }
-  
+
   #valorDoacoes {
     margin-top: 30px;
   }
@@ -1585,14 +1694,14 @@ body {
   .cartao1 {
     max-width: 800px;
   }
-  
+
   #Instituicao,
   #multibanco,
   #ContactoInstituicao {
     margin-bottom: 10px;
     display: block;
   }
-  
+
   #progress-bar-container {
     margin-top: 30px;
   }
@@ -1608,4 +1717,3 @@ body {
 #Log {
   cursor: pointer;
 }
-
