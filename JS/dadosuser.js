@@ -27,8 +27,7 @@ if (userData) {
       // Armazenar os dados do usuário no LocalStorage com a chave "UtilizadorEdit"
       localStorage.setItem('UtilizadorEdit', JSON.stringify(user));
     }
-    // Redirecionar para a página de edição de perfil
-    window.location.href = 'EditarPerfilUser.html';
+    
   });
 
   // Localizar o elemento do botão de logout no seu HTML

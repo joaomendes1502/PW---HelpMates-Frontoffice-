@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
         <style>
             /* Estilos personalizados */
@@ -139,7 +138,7 @@
                                 </div>
 
                                 <div id="buttons">
-                                    <button id="edit-profile-button">Editar Perfil</button>
+                                    <button id="edit-profile-button" onclick="showEditProfileForm()">Editar Perfil</button>
                                 </div>
                             </div>
                         </div>
@@ -156,14 +155,31 @@
                         <h2>Doações do utilizador</h2>
                         <div id="tabela-doacoes"></div>
                     </section>
+
+                    <!-- Conteúdo do "Editar Perfil" -->
+                    <section id="edit-profile-container" class="hidden">
+                        <form id="edit-profile-form">
+                            <h2>Editar Perfil</h2>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name-input" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email-input" required>
+                            
+                            <label for="password">Senha:</label>
+                            <input type="password" id="password-input" required>
+                            
+                            <button type="button" id="save-changes-button" >Salvar Alterações</button>
+                            <button type="button" id="cancel-edit-button" class="custom-button" onclick="cancelEditProfile()">Cancelar</button>
+                        </form>
+                    </section>
                 </div>
             </div>
         </div>
     </div>
     
-
     <!-- FOOTER-->
-    <footer class="footer">
+   <footer class="footer">
         <div class="footer-left">
           <img src="images\Logo.png">
           <p></p>
@@ -210,11 +226,14 @@
       </footer>
 
     <script>
+        // Variáveis globais
+        var userDataContainer = document.getElementById("user-data-container");
+        var editProfileContainer = document.getElementById("edit-profile-container");
 
         // Funções para mostrar/ocultar o conteúdo ao clicar nos botões da sidebar
         function showProfile() {
             hideAllSections();
-            document.getElementById("user-data-container").classList.remove("hidden");
+            userDataContainer.classList.remove("hidden");
         }
 
         function showCandidaturas() {
@@ -234,6 +253,37 @@
             });
         }
 
+        // Funções para exibir/ocultar o formulário de edição de perfil
+        function showEditProfileForm() {
+            userDataContainer.classList.add("hidden");
+            editProfileContainer.classList.remove("hidden");
+
+            // Preencher os campos do formulário com os dados do perfil atual
+            var displayName = document.getElementById("display-name").innerText;
+            var displayEmail = document.getElementById("display-email").innerText;
+            document.getElementById("name-input").value = displayName;
+            document.getElementById("email-input").value = displayEmail;
+        }
+
+        function cancelEditProfile() {
+            userDataContainer.classList.remove("hidden");
+            editProfileContainer.classList.add("hidden");
+        }
+
+        // Função para salvar as alterações no perfil
+    
+
+        // Funções para terminar sessão e eliminar conta
+        function terminarSessao() {
+            // Lógica para terminar a sessão do usuário
+            alert("Sessão terminada");
+        }
+
+        function eliminarConta() {
+            // Lógica para eliminar a conta do usuário
+            alert("Conta eliminada");
+        }
+
         window.onload = function () {
         showProfile();
         };
@@ -244,11 +294,8 @@
     <script src="JS/marcacao.js"></script>
     <script src="JS/doacoes.js"></script>
     <script src="JS/navbar.js"></script>
+    <script src="JS/editardadosuser.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <div class="gtranslate_wrapper">
-        <script src="JS/tradutor.js"></script>
-      </div>
-      <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
 </body>
 
