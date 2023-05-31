@@ -27,10 +27,10 @@ if (TipoSelecionado) {
             '<div class="h-100">' +
             '<h3 id="OrganizacaoDetalheOpo" class="card-title">' + texto[i].Organizacao + '</h3>' +
             '<p id="descDetalheOpo" class="card-desc">' + texto[i].Descricaoo + '</p>' +
-            '<p id="DataOpo" class="card-desc">' + '<i class= "bi bi-calendar-date icon-orange">' + '</i>' + texto[i].Data + '</p>' +
-            '<p  id="LocalOpo" class="card-desc">' + '<i class="bi bi-map icon-orange">' + '</i>' + texto[i].Local + '</p>' +
-            '<p id="VagasOpo" class="card-desc">' + '<i class="bi bi-people-fill icon-orange">' + '</i>' + texto[i].VagasDisponiveis + '</p>' +
-            '<p id="ContactoOpo" class="card-desc">' + '<i class="bi bi bi-telephone icon-orange">' + '</i>' + texto[i].Contacto + '</p>' +
+            '<p id="DataOpo" class="card-desc">' + '<i class= "bi bi-calendar-date icon-orange"> ' + '</i>' + texto[i].Data + '</p>' +
+            '<p  id="LocalOpo" class="card-desc">' + '<i class="bi bi-map icon-orange">' + '</i> ' + texto[i].Local + '</p>' +
+            '<p id="VagasOpo" class="card-desc">' + '<i class="bi bi-people-fill icon-orange"> ' + '</i>' + texto[i].VagasDisponiveis + '</p>' +
+            '<p id="ContactoOpo" class="card-desc">' + '<i class="bi bi bi-telephone icon-orange"> ' + '</i>' + texto[i].Contacto + '</p>' +
             '<p >' + '<a id="' + texto[i].Contacto + '" class="btn btn-primary marcar botao-detalhe">Inscrever-se </a></p>' +
             '</div>' +
             '</div>' +

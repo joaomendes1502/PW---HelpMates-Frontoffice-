@@ -30,20 +30,20 @@ if (TipoDoacaoSelecionado) {
     // Define o valor máximo para cada tipo de doação no objeto postcolunaDetalhesDoacoes
     postcolunaDetalhesDoacoes.forEach(post => {
         if (post.TipoDoacoes === "Medicamentos") {
-            post.valorMaximo = 200; // Defina o valor máximo para o Tipo1 como 200
+            post.valorMaximo = 200; 
         } else if (post.TipoDoacoes === "Casas Seguras") {
-            post.valorMaximo = 300; // Defina o valor máximo para o Tipo2 como 300
+            post.valorMaximo = 300; 
         } else if (post.TipoDoacoes === "Cuidar Animais") {
-            post.valorMaximo = 400; // Defina o valor máximo para o Tipo3 como 150
+            post.valorMaximo = 400; 
         }
         else if (post.TipoDoacoes === "Roupas") {
-            post.valorMaximo = 500; // Defina o valor máximo para o Tipo3 como 150
+            post.valorMaximo = 500; 
         }
         else if (post.TipoDoacoes === "Ensinar") {
-            post.valorMaximo = 600; // Defina o valor máximo para o Tipo3 como 150
+            post.valorMaximo = 600; 
         }
         else if (post.TipoDoacoes === "Comida Animais") {
-            post.valorMaximo = 700; // Defina o valor máximo para o Tipo3 como 150
+            post.valorMaximo = 700; 
         }
     });
 
@@ -113,9 +113,9 @@ if (TipoDoacaoSelecionado) {
                 if (valorDoacao === "" || Number(valorDoacao) <= 0) {
                     alert("Por favor, insira um valor de doação válido.");
                 } else if (Number(valorDoacao) > valorMaximo) {
-                    alert("O valor máximo de doação para esta categoria foi atingido.");
+                    alert("Não é possível doar essa quantia!");
                 } else if (Number(valorDoacao) + totalDinheiroDoado > valorMaximo) {
-                    alert("O valor máximo de doação para esta categoria foi atingido.");
+                    alert("Não é possível doar essa quantia!");
                 }else {
                     // Armazena as informações da doação no localStorage
                     const doacao = {
@@ -147,8 +147,8 @@ if (TipoDoacaoSelecionado) {
 
                     // Verifica se o valor máximo foi atingido para o tipo selecionado
                     if (totalDinheiroDoado > valorMaximo) {
-                        alert("O valor máximo de doação para esta categoria foi atingido.");
-                        // Você pode adicionar código adicional aqui para lidar com a situação quando o valor máximo é atingido
+                        alert("O valor de doação excede o valor máximo!");
+                       
                     } else {
                         // Salva o novo valor total de doações específico para o tipo selecionado no localStorage
                         localStorage.setItem(`TotalDinheiroDoado_${TipoDoacaoSelecionado}`, totalDinheiroDoado.toString());
