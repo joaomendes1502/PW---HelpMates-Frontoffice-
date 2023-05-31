@@ -230,55 +230,7 @@ var postarSobreNos = [{
     "Tipo": "Beneficiária"
 }];
 
-/*DETALHE OPORTUNIDAS*/
-var imagemdetalhe = [{
-    "imagem": "./images/animais.jpg",
-    "Tipo": "Animais"
-},{
-    "imagem": "./images/educacao.jpeg",
-    "Tipo": "Educação"
-},{
-    "imagem": "./images/animais.jpg",
-    "Tipo": "Animais"
-},{
-    "imagem": "./images/educacao.jpeg",
-    "Tipo": "Educação"
-}];
 
-var itensdetalhe = [{
-
-
-    "Descricaoo": "Durante a campanha de voluntariado curta, trabalharemos em parceria com abrigos e organizações de resgate de animais locais. Nosso foco principal será oferecer assistência e suporte aos animais que estão em busca de um lar amoroso. Haverá várias atividades gratificantes nas quais você poderá participar, desde passear com cães, brincar com gatos, ajudar nos cuidados diários até auxiliar em eventos de adoção.",
-    "Organizacao": "Animal Crossing",
-    "Data": " 24-11-2002",
-    "Local": " Viana do Castelo",
-    "VagasDisponiveis": " 25",
-    "Tipo": "Animais",
-    "Contacto": " 987654321"
-
-},{
-
-
-    "Descricaoo": "Durante esta campanha, terás a oportunidade de participar em várias atividades enriquecedoras. Poderás auxiliar no transporte dos animais para as clínicas veterinárias, ajudar nos cuidados pós-operatórios e participar em eventos e campanhas de angariação de donativos. Também poderás realizar voluntariado à distância, gerir as redes sociais, desenvolver campanhas e eventos, entrar em contato com parceiros e organizações. Junta-te a nós e faz a diferença na vida dos animais necessitados.",
-    "Organizacao": "Animais de Rua",
-    "Data": " 24-11-2002",
-    "Local": "Vila Nova de Gaia",
-    "VagasDisponiveis": "30",
-    "Tipo": "Animais",
-    "Contacto": " 987654320"
-
-},{
-
-
-    "Descricaoo": "O voluntariado na área da educação é uma forma poderosa de contribuir para a sociedade, promovendo o desenvolvimento intelectual e o acesso à educação de qualidade para todos. Ao envolver-se neste tipo de trabalho voluntário, tens a oportunidade de fazer a diferença na vida de crianças, jovens e adultos, ajudando-os a alcançar o seu potencial e transformando comunidades inteiras.",
-    "Organizacao": "Educational",
-    "Data": " 23-04-2003",
-    "Local": " Lisboa",
-    "VagasDisponiveis": " 20",
-    "Tipo": "Educação",
-    "Contacto": " 987654377"
-
-}];
 
 
 localStorage.setItem("ImagensSobreNos", JSON.stringify(imagensSobreNos))
@@ -301,8 +253,6 @@ localStorage.setItem("ImagensDetalhesDoacoes", JSON.stringify(imagensDetalheDoac
 
 localStorage.setItem("DetalhesDoacoes", JSON.stringify(postarDetalheDoacoes))
 
-localStorage.setItem("ImagemDetalhe", JSON.stringify(imagemdetalhe))
 
-localStorage.setItem("ItensDetalhe", JSON.stringify(itensdetalhe))
 
 
