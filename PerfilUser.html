@@ -113,8 +113,8 @@
                     <div style="height: 100px;"></div>
                 
                     <!-- Botões "Terminar Sessão" e "Eliminar Conta" -->
-                    <button id="logout-button" class="btn btn-light sidebar-button text-danger" onclick="terminarSessao()">Terminar Sessão</button>
-                    <button id="delete-account-button" class="btn btn-light sidebar-button text-danger" onclick="eliminarConta()">Eliminar Conta</button>
+                    <button id="logout-button" class="btn btn-light sidebar-button text-danger" ">Terminar Sessão</button>
+                    <button id="delete-account-button" class="btn btn-light sidebar-button text-danger" ">Eliminar Conta</button>
                 </div> 
             </div>
             <div class="col-lg-9 col-md-8">
@@ -269,20 +269,6 @@
         function cancelEditProfile() {
             userDataContainer.classList.remove("hidden");
             editProfileContainer.classList.add("hidden");
-        }
-
-        // Função para salvar as alterações no perfil
-    
-
-        // Funções para terminar sessão e eliminar conta
-        function terminarSessao() {
-            // Lógica para terminar a sessão do usuário
-            alert("Sessão terminada");
-        }
-
-        function eliminarConta() {
-            // Lógica para eliminar a conta do usuário
-            alert("Conta eliminada");
         }
 
         window.onload = function () {
